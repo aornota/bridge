@@ -22,13 +22,13 @@ _Coming soon..._
 
 #### ... | ...
 
-### Weak (ore-emptive) opening bids | ...
+### Weak (pre-emptive) opening bids | ...
 
 #### ... | ...
 
-_and coming later..._
+_...and coming later..._
 
-- [ ] Fourth-suit forcing...
+- [ ] Fourth suit forcing...
 - [ ] New minor forcing...
 - [ ] Jacoby 2NT...
 - [ ] Splinters...
@@ -46,7 +46,7 @@ _Coming soon..._
 
 ### Penalty doubles | ...
 
-_and coming later..._
+_...and coming later..._
 
 - [ ] Negative doubles...
 - [ ] Responsive doubles...
@@ -59,26 +59,32 @@ _and coming later..._
 
 _Coming soon..._
 
-Bergen [Marty]: Pocket Posh Tips For Bridge Players
+### Mary Ann Dufresne and Marion Ellingsen | _Bridge with Bells & Whistles_ (and _We Love the Majors_)...
+
+###  | __...
+
+###  | __...
+
+###  | __...
+
+###  | __...
+
+###  | __...
+
+###  | __...
+
+###  | __...
+
+###  | __...
+
+###  | __...
+
 Bird [David]: Ten Ways To Improve Your Bridge / 10 More Ways To Improve Your Bridge
 Cohen [Larry]: To Bid Or Not To Bid
-Dormer [Albert] w/ Klinger [Ron]: The New Complete Book Of Bridge
-Dufresne [Mary Ann] & Ellingsen [Marion]: Bridge With Bells & Whistles / We Love The Majors
 Hardy [Max]; Standard Bridge Bidding For The 21st Century
-Hughes [Roy]: Building A Bidding System*
-Hughes [Roy]: The Contested Auction
+Hughes [Roy]: Building A Bidding System / The Contested Auction
 Jackson [Jim]: One Trick At A Time
-Jacobs [Bill]: Fantunes Revealed
-Kelsey [Hugh] & Kambites [Andrew]: ACOL Bridge For Bright Beginners
-Kelsey [Hugh] & Klinger [Ron]: New Instant Guide To Bridge
-{ Kimelman [Neil[: Improve Your Bidding Judgment }
-Klinger [Ron]: ACOL Bridge Flipper
 MacKinnon [Robert F.]: Bridge, Probability & Information
-{ Magee [Bernard]: Tips For Better Bridge }
-Mendelson [Paul]: The Right Way To Play Bridge / Control The Bidding / Bridge Winning Ways To Play Your Cards / 121 Tips For Better Bridge / { ... }
-Robson [Andrew]: Bridge Secrets / { ... }
-Rodwell [Eric] w/ Horton [Mark]: The Rodwell Files
-Seagram [Barbara] & Smith [Marc]: The Pocket Guide To Bridge Conventions You Should Know
+Mendelson [Paul]: The Right Way To Play Bridge / Control The Bidding / Bridge Winning Ways To Play Your Cards / 121 Tips For Better Bridge
 Stark [Andy]: The Weak Notrump
-Treble [Bill]: Getting Into The Bidding
-{ Winkler [Peter]: Bridge At The Enigma Club }
+Treble [Bill]: Getting Into The Bidding / Two Over One
