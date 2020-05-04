@@ -23,4 +23,3 @@ _Coming soon..._
 #### Terence Reese: _Play These Hands With Me_
 
 #### Robert F. MacKinnon: _Bridge, Probablity & Information_
-

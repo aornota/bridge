@@ -6,4 +6,3 @@ _...and coming later..._
 - [ ] Michaels cue-bid
 - [ ] Unusual no-trump
 - [ ] Competing over 1NT
-
