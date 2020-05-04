@@ -3,13 +3,10 @@ module Aornota.Bridge.MdConsole.Program
 open Aornota.Bridge.Common.SourcedLogger
 open Aornota.Bridge.MdConsole.Console
 
-open System
-
-open Microsoft.Extensions.Configuration
-
 open Giraffe.SerilogExtensions
-
+open Microsoft.Extensions.Configuration
 open Serilog
+open System
 
 let [<Literal>] private SOURCE = "MdConsole.Program"
 
