@@ -7,7 +7,7 @@
 > ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)6
 > ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)AQJT2
 
-[Uncontested auctions](#1-NT-opening)
+[1![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png)](#1-NT-opening)
 
 ## Introduction
 
