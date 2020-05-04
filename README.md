@@ -6,7 +6,11 @@ _Coming soon..._
 
 2 **C** | 2 **D** | 2 **H** | 2 **S** | 3 **NT**
 
-2![C](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/C.png) | ...
+2![C](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/C.png) |
+2![D](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/D.png) |
+2![H](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/H.png) |
+2![S](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/S.png) |
+3![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png) | -
 
 ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)AK63
 ![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)T42
