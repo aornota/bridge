@@ -4,7 +4,11 @@
 
 _Coming soon..._
 
-**C D H S NT** ♠ ♥ ♦ ♣
+**C D H S NT**
+![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)
+![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)
+![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)
+![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)
 
 ### Why weak no-trump? | ...
 
