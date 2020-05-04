@@ -4,7 +4,7 @@
 
 _Coming soon..._
 
-**C D H S NT**
+!2[C](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/C.png) |
 
 ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)AK63
 ![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)T42
