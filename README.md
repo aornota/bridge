@@ -1,4 +1,4 @@
-# ![bridge](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/bridge-32x32.png) | bridge (pre-α)
+# ![bridge](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/tpoc-32x32.png) | bridge (pre-α)
 
 ## Introduction
 
