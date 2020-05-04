@@ -4,7 +4,7 @@
 
 _Coming soon..._
 
-C D H S NT ♠ ♥ ♦ ♣
+**C D H S NT** ♠ ♥ ♦ ♣
 
 ### Why weak no-trump? | ...
 
