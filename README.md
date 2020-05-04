@@ -1,19 +1,25 @@
 # ![bridge](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/tpoc-32x32.png) | bridge (pre-α)
 
-## Introduction
-
-_Coming soon..._
+## TEMP-NMB...
 
 > ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)AK63
 > ![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)T42
 > ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)6
 > ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)AQJT2
 
+## Introduction
+
+_Coming soon..._
+
 ### Why weak no-trump? | ...
 
 ### Why 5-card majors? | ...
 
 ### Why 2-over-1 game forcing? | ...
+
+## Table of contents
+
+_Coming soon..._
 
 ## Uncontested auctions
 
