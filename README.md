@@ -6,13 +6,13 @@ _Coming soon..._
 
 **C D H S NT**
 
-A![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)
+![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)A
 
-T![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)
+![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)T
 
-6![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)
+![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)6
 
-2![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)
+![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)2
 
 ### Why weak no-trump? | ...
 
