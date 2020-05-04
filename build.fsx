@@ -34,4 +34,4 @@ Target.create "help" (fun _ ->
     printfn "\n\trun-md-console -> builds and runs [Debug] md-console"
     printfn "\n\thelp -> shows this list of build targets\n")
 
-Target.runOrDefaultWithArguments "help"
+Target.runOrDefaultWithArguments "run-md-console"
