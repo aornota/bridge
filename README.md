@@ -4,7 +4,7 @@
 
 _Coming soon..._
 
-2**C** | 2**D** | 2**S** | 3**H** | 4**H**
+2 **C** | 2 **D** | 2 **S** | 3 **H** | 4 **H**
 
 2![C](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/C.png) | ...
 
