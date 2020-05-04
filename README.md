@@ -7,7 +7,7 @@
 > ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)6
 > ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)AQJT2
 
-[1![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png) opening](#1-NT-opening)
+[1NT opening](#1NT opening)
 
 ## Introduction
 
@@ -29,7 +29,7 @@ _Coming soon..._
 
 ### Standard opening bids | ...
 
-#### <a name="1-NT-opening"> 1![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png) | ...
+#### <a name="1NT opening"> 1![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png) | ...
 
 #### 1![S](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/S.png) and 1![H](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/H.png) | ...
 
