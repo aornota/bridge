@@ -7,22 +7,22 @@
 > ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)6
 > ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)AQJT2
 
-* [Introduction](#Introduction)
+* [**Introduction**](#Introduction)
   * [Why weak no-trump?](#Why_weak_no-trump?)
   * [Why 5-card majors?](#Why_5-card_majors?)
   * [Why 2-over-1 game forcing?](#Why_2-over-1_game_forcing?)
-* [Uncontested auctions](#Uncontested_auctions)
+* [**Uncontested auctions**](#Uncontested_auctions)
   * [Standard opening bids](#Standard_opening_bids)
-    * [1NT opening bid](#1NT_opening_bid)
-    * [1S and 1H opening_bids](#1S_and_1H_opening_bids)
-    * [1D and 1C opening bids](#1D_and_1C_opening_bids)
+    * [_1NT opening bid_](#1NT_opening_bid)
+    * [_1S and 1H opening_bids_](#1S_and_1H_opening_bids)
+    * [_1D and 1C opening bids_](#1D_and_1C_opening_bids)
   * [Strong opening bids](#Strong_opening_bids)
   * [Weak (pre-emptive) opening_bids](#Weak_(pre-emptive)_opening_bids)
-* [Competitive auctions](#Competitive_auctions)
+* [**Competitive auctions**](#Competitive_auctions)
   * [Overcalls](#Overcalls)
   * [Take-out doubles](#Take-out_doubles)
   * [Penalty doubles](#Penalty_doubles)
-* [Recommended reading](#Recommended_reading)
+* [**Recommended reading**](#Recommended_reading)
 
 ## Table of contents
 
