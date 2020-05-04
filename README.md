@@ -7,6 +7,10 @@
 > ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)6
 > ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)AQJT2
 
+## Table of contents
+
+_TODO-NMB: Create programmatically..._
+
 * [**Introduction**](#Introduction)
   * [Why weak no-trump?](#Why_weak_no-trump?)
   * [Why 5-card majors?](#Why_5-card_majors?)
@@ -27,10 +31,6 @@
   * [Take-out doubles](#Take-out_doubles)
   * [Penalty doubles](#Penalty_doubles)
 * [**Recommended reading**](#Recommended_reading)
-
-## Table of contents
-
-_Coming soon..._
 
 ## <a name="Introduction"> Introduction
 
