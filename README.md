@@ -7,32 +7,39 @@
 > ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)6
 > ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)AQJT2
 
-[1NT opening](#1NT-opening)
+* [Introduction](#Introduction)
+  * [Why weak no-trump?](#why_weak_no-trump?)
+  * [Why 5-card majors?](#why_5-card_majors?)
+  * [Why 2-over-1 game forcing?](#why_2-over-1_game_forcing?)
+* [Uncontested auctions](#Uncontested_auctions)
+  * [Standard opening bids](#Standard_opening_bids)
+  * [Strong opening bids](#Strong_opening_bids)
+  * [Weak (pre-emptive) opening_bids](#Weak_(pre-emptive)_opening_bids)
+* [Competitive auctions](#Competitive_auctions)
+  * [Overcalls](#Overcalls)
+  * [Take-out doubles](#Take-out_doubles)
+  * [Penalty doubles](#Penalty_doubles)
+* [Recommended reading](#Recommended_reading)
 
 ## Table of contents
 
 _Coming soon..._
 
-### TEMP-NMB...
-
-* [Introduction](#Introduction)
-  * [Why weak no-trump?](#why~weak~no-trump?)
-
 ## <a name="Introduction"> Introduction
 
 _Coming soon..._
 
-### <a name="Why~weak~no-trump?"> Why weak no-trump? | ...
+### <a name="Why_weak_no-trump?"> Why weak no-trump? | ...
 
-### <a name="Why~5-card~majors"> Why 5-card majors? | ...
+### <a name="Why_5-card_majors"> Why 5-card majors? | ...
 
-### <a name="Why~2-over-1~game~forcing"> Why 2-over-1 game forcing? | ...
+### <a name="Why_2-over-1_game_forcing"> Why 2-over-1 game forcing? | ...
 
-## <a name="Uncontested~auctions"> Uncontested auctions
+## <a name="Uncontested_auctions"> Uncontested auctions
 
 _Coming soon..._
 
-### <a name="Standard~opening~bids"> Standard opening bids | ...
+### <a name="Standard_opening_bids"> Standard opening bids | ...
 
 #### 1![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png) | ...
 
@@ -40,13 +47,13 @@ _Coming soon..._
 
 #### 1![D](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/D.png) and 1![C](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/C.png) | ...
 
-### Strong opening bids | ...
+### <a name="Strong_opening_bids"> Strong opening bids | ...
 
 #### 2![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png) | ...
 
 #### 2![C](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/C.png) | ...
 
-### Weak (pre-emptive) opening bids | ...
+### <a name="Weak_(pre-emptive)_opening_bids"> Weak (pre-emptive) opening bids | ...
 
 #### 2![S](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/S.png) and 2![H](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/H.png) | ...
 
@@ -62,15 +69,15 @@ _...and coming later..._
 - [ ] Inverted minors...
 - [ ] Roman key card Blackwood...
 
-## Competitive auctions
+## <a name="Competitive_auctions"> Competitive auctions
 
 _Coming soon..._
 
-### Overcalls | ...
+### <a name="Overcalls"> Overcalls | ...
 
-### Take-out doubles | ...
+### <a name="Take-out_doubles"> Take-out doubles | ...
 
-### Penalty doubles | ...
+### <a name="Penalty_doubles"> Penalty doubles | ...
 
 _...and coming later..._
 
@@ -81,7 +88,7 @@ _...and coming later..._
 - [ ] Unusual no-trump...
 - [ ] Competing over 1NT...
 
-## Recommended reading
+## <a name="Recommended_reading"> Recommended reading
 
 _Coming soon..._
 
