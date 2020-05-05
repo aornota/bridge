@@ -6,7 +6,9 @@ Cards: ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/reso
 
 Auction: 1![H](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/H.png) | 3![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png) | - | - | **dbl** | _**rdbl**_ | ...
 
-Hand: {| s:AK63 h:T42 d:- c:AQJT62 |}
+Full hand: {| s:AK63 h:T42 d:- c:AQJT62 --shape --hcp |}
+
+Partial hand: {| s:3 h:T d:- c:JT6 -p |}
 
 ## Table of contents
 
