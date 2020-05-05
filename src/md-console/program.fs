@@ -2,11 +2,13 @@ module Aornota.Bridge.MdConsole.Program
 
 open Aornota.Bridge.Common.SourcedLogger
 open Aornota.Bridge.MdConsole.Console
+open Aornota.Bridge.MdConsole.Process
 
 open Giraffe.SerilogExtensions
 open Microsoft.Extensions.Configuration
 open Serilog
 open System
+open System.IO
 
 let [<Literal>] private SOURCE = "MdConsole.Program"
 
@@ -32,17 +34,10 @@ let private sourcedLogger = logger |> sourcedLogger SOURCE
 let private mainAsync argv = async {
     writeNewLine (sprintf "Running %s.mainAsync" SOURCE) ConsoleColor.Green
     write (sprintf " %A" argv) ConsoleColor.DarkGreen
-    write "..." ConsoleColor.Green
+    write "...\n\n" ConsoleColor.Green
 
-    try
-        (* TEMP-NMB... *)
-        writeNewLine "\nLogging examples:\n" ConsoleColor.Magenta
-        let test = Some 3.14
-        sourcedLogger.Debug "This is a debug message"
-        sourcedLogger.Information ("This is an information message: {test}", test)
-        sourcedLogger.Warning "This is a warning message"
-        failwith "Fake error. Sad!"
-    with | exn -> sourcedLogger.Error ("Unexpected error: {errorMessage}\n{stackTrace}", exn.Message, exn.StackTrace)
+    try processMd logger (Path.Combine ((DirectoryInfo Environment.CurrentDirectory).Parent.FullName, "md"))
+    with | exn -> sourcedLogger.Error ("Unexpected error:\n\t{errorMessage}", exn.Message)
 
     writeNewLine "Press any key to exit..." ConsoleColor.Green
     Console.ReadKey () |> ignore

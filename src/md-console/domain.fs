@@ -65,9 +65,4 @@ type Bid with
                 let! bidSuit = BidSuit.ofString (string.Substring 1)
                 return! Ok (Bid (bidLevel, bidSuit))
             | _ -> return! Error (sprintf "'%s' is not a %s" string (nameof Bid)) }
-    member this.MdString =
-        match this with
-        | Bid (bidLevel, bidSuit) -> sprintf "%s%s" bidLevel.MdString bidSuit.MdString
-        | Pass -> "-"
-        | Double -> "dbl"
-        | Redouble -> "rdbl"
+    member this.MdString = match this with | Pass -> "-" | Bid (bidLevel, bidSuit) -> sprintf "%s%s" bidLevel.MdString bidSuit.MdString | Double -> "**dbl**" | Redouble -> "_**rdbl**_"

@@ -11,7 +11,7 @@
         <Compile Include="..\common\sourced-logger.fs" />
         <Compile Include="console.fs" />
         <Compile Include="domain.fs" />
-
+        <Compile Include="process.fs" />
         <Compile Include="program.fs" />
     </ItemGroup>
     <ItemGroup> <!-- appsettings.json | appsettings.development.json -->

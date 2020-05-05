@@ -1,13 +1,19 @@
 # ![bridge](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/tpoc-32x32.png) | bridge (pre-α)
 
-{\md\0000 TEMP-NMB\TEMP-NMB.md}
+## TEMP-NMB...
 
-{\md\0999 Table of contents\Table of contents.md}
+Cards: {As} | {7h} | {3d} | {Jc}
 
-{\md\1000 Introduction\Introduction.md}
+Auction: {1H} | {3NT} | {-} | {pass} | {dbl} | {rdbl} | ...
 
-{\md\3000 Uncontested auctions\Uncontested auctions.md}
+Hand: {| s:AK63 h:T42 d:- c:AQJT62 |}
 
-{\md\6000 Competitive auctions\Competitive auctions.md}
+{file:0999 Table of contents\Table of contents.md}
 
-{\md\9000 Recommended reading\Recommended reading.md}
+{file:1000 Introduction\Introduction.md}
+
+{file:3000 Uncontested auctions\Uncontested auctions.md}
+
+{file:6000 Competitive auctions\Competitive auctions.md}
+
+{file:9000 Recommended reading\Recommended reading.md}

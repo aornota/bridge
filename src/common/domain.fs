@@ -10,4 +10,4 @@ type BidSuit = | Suit of Suit | NoTrump
 
 type BidLevel = | OneLevel | TwoLevel | ThreeLevel | FourLevel | FiveLevel | SixLevel | SevenLevel
 
-type Bid = | Bid of BidLevel * BidSuit | Pass | Double | Redouble
+type Bid = | Pass | Bid of BidLevel * BidSuit | Double | Redouble
