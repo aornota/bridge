@@ -13,9 +13,6 @@ Partial hand: {| s:3 h:T d:- c:JT6 -p |}
 {file:0999 Table of contents\Table of contents.md}
 
 {file:1000 Introduction\Introduction.md}
-
 {file:3000 Uncontested auctions\Uncontested auctions.md}
-
 {file:6000 Competitive auctions\Competitive auctions.md}
-
 {file:9000 Recommended reading\Recommended reading.md}
