@@ -37,7 +37,9 @@ let rec private processFile (logger:ILogger) (fileInfo:FileInfo) =
     let contents = fileTag.Replace (contents, MatchEvaluator (processFileTag fileInfo (processFile logger)))
     let contents = cardTag.Replace (contents, MatchEvaluator (processCardTag fileInfo))
     let contents = bidTag.Replace (contents, MatchEvaluator (processBidTag fileInfo))
-    // TODO-NMB: More tags (e.g. hands | auctions | deals)...
+    (* TODO-NMB:
+         - More tags (e.g. hands | auctions | deals)...
+         - ...then check no unprocessed tags [except {toc}]?... *)
     logger.Debug ("...processed {partialPath}", partialPath)
     contents
 
@@ -46,6 +48,7 @@ let processMd logger mdDir =
     let rootFileInfo = FileInfo (Path.Combine (mdDir, "root.md"))
     logger.Information "Starting processing..."
     let contents = processFile logger rootFileInfo
+    // TODO-NMB: Generate table-of-contents [if {toc} tag]?...
     (* TEMP-NMB...
     logger.Debug ("Processed contents:\n{contents}", contents) *)
     logger.Information "...finished processing"

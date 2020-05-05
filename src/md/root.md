@@ -6,7 +6,9 @@ Cards: {As} | {7h} | {3d} | {Jc}
 
 Auction: {1H} | {3NT} | {-} | {pass} | {dbl} | {rdbl} | ...
 
-Hand: {| s:AK63 h:T42 d:- c:AQJT62 |}
+Full hand: {| s:AK63 h:T42 d:- c:AQJT62 --shape --hcp |}
+
+Partial hand: {| s:3 h:T d:- c:JT6 -p |}
 
 {file:0999 Table of contents\Table of contents.md}
 
