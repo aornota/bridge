@@ -12,6 +12,8 @@ open System.IO
 
 let [<Literal>] private SOURCE = "MdConsole.Program"
 
+// TODO-NMB: Not writing to ...\logs?...
+
 let private configuration =
     ConfigurationBuilder()
         .AddJsonFile("appsettings.json", false)
@@ -40,7 +42,7 @@ let private mainAsync argv = async {
     write (sprintf " %A" argv) ConsoleColor.DarkGreen
     write "...\n\n" ConsoleColor.Green
 
-    // TODO-NMB: Recursively look for .\src (rather than assuming that this is immediate parent of current)? e.g. in case run from ...\bin\[Debug|Release]\...
+    // TODO-NMB: Recursively look for 'src' folder (rather than assuming that this is the immediate parent of the current folder)? e.g. in case run from ...\bin\[Debug|Release]\...
     try processMd Log.Logger (Path.Combine ((DirectoryInfo Environment.CurrentDirectory).Parent.FullName, "md"))
     with | exn -> sourcedLogger.Error ("Unexpected error:\n\t{errorMessage}", exn.Message)
 
