@@ -1,6 +1,5 @@
 ## TEMP-NMB...
 
-> ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)AK63
-> ![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)T42
-> ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)-
-> ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)AQJT62
+{As}
+
+{| s:AK63 h:T42 d:- c:AQJT62 |}

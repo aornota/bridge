@@ -1,1 +1,1 @@
-#### <a name="1S_and_1H_opening_bids"> 1![S](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/S.png) and 1![H](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/H.png) opening bids
+#### <a name="1S_and_1H_opening_bids"> {1S} and {1H} opening bids

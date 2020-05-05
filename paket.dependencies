@@ -20,6 +20,7 @@ group md-console
     storage: none
 
 	nuget FSharp.Core
+    nuget FsToolkit.ErrorHandling
     nuget Giraffe.SerilogExtensions
 	nuget Serilog
 	nuget Serilog.Settings.Configuration

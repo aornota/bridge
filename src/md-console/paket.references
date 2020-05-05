@@ -1,6 +1,7 @@
 group md-console
 
 	FSharp.Core
+    FsToolkit.ErrorHandling
     Giraffe.SerilogExtensions
 	Serilog
     Serilog.Settings.Configuration
