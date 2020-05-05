@@ -14,11 +14,18 @@
         <Compile Include="process.fs" />
         <Compile Include="program.fs" />
     </ItemGroup>
-    <ItemGroup> <!-- appsettings.json | appsettings.development.json -->
+    <ItemGroup> <!-- appsettings.json -->
         <Content Include="appsettings.json">
             <CopyToOutputDirectory>Always</CopyToOutputDirectory>
         </Content>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Configuration)'=='Debug'"> <!-- appsettings.development.json -->
         <Content Include="appsettings.development.json">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Configuration)'=='Release'"> <!-- appsettings.production.json -->
+        <Content Include="appsettings.production.json">
             <CopyToOutputDirectory>Always</CopyToOutputDirectory>
         </Content>
     </ItemGroup>

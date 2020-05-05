@@ -16,27 +16,32 @@ let private configuration =
     ConfigurationBuilder()
         .AddJsonFile("appsettings.json", false)
 #if DEBUG
-        .AddJsonFile("appsettings.development.json", true)
+        .AddJsonFile("appsettings.development.json", false)
 #else
-        .AddJsonFile("appsettings.production.json", true)
+        .AddJsonFile("appsettings.production.json", false)
 #endif
         .Build()
 
-do Log.Logger <-
-    LoggerConfiguration()
-        .ReadFrom.Configuration(configuration)
-        .Destructure.FSharpTypes()
-        .CreateLogger()
+do Log.Logger <- LoggerConfiguration().ReadFrom.Configuration(configuration).Destructure.FSharpTypes().CreateLogger()
 
-let private logger = Log.Logger
-let private sourcedLogger = logger |> sourcedLogger SOURCE
+let private sourcedLogger = Log.Logger |> sourcedLogger SOURCE
+
+let private debugOrRelease =
+#if DEBUG
+    "Debug"
+#else
+    "Release"
+#endif
 
 let private mainAsync argv = async {
-    writeNewLine (sprintf "Running %s.mainAsync" SOURCE) ConsoleColor.Green
+    writeNewLine "Running " ConsoleColor.Green
+    write debugOrRelease ConsoleColor.DarkYellow
+    write (sprintf " %s.mainAsync" SOURCE) ConsoleColor.Green
     write (sprintf " %A" argv) ConsoleColor.DarkGreen
     write "...\n\n" ConsoleColor.Green
 
-    try processMd logger (Path.Combine ((DirectoryInfo Environment.CurrentDirectory).Parent.FullName, "md"))
+    // TODO-NMB: Recursively look for .\src (rather than assuming that this is immediate parent of current)? e.g. in case run from ...\bin\[Debug|Release]\...
+    try processMd Log.Logger (Path.Combine ((DirectoryInfo Environment.CurrentDirectory).Parent.FullName, "md"))
     with | exn -> sourcedLogger.Error ("Unexpected error:\n\t{errorMessage}", exn.Message)
 
     writeNewLine "Press any key to exit..." ConsoleColor.Green
