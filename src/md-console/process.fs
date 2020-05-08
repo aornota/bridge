@@ -54,8 +54,8 @@ let rec private processFile (logger:ILogger) (fileInfo:FileInfo) =
         File.ReadAllLines fileInfo.FullName
         |> List.ofArray
         |> List.filter (fun line -> not ((line.Trim ()).StartsWith SINGLE_LINE_COMMENT))
-        // Note: When removing end-of-line comments, look for " //" rather than just "//" - else will inadverently mangle "https://...".
-        |> List.map (fun line -> match line.IndexOf (sprintf " %s" SINGLE_LINE_COMMENT) with | index when index > 1 -> line.Substring (0, index - 1) | _ -> line)
+        // Note: When removing end-of-line comments, look for " //" rather than just "//" - else will inadvertently mangle "https://...".
+        |> List.map (fun line -> match line.IndexOf (sprintf " %s" SINGLE_LINE_COMMENT) with | index when index > 0 -> line.Substring (0, index) | _ -> line)
     let folder (lines:string list, inMultiLineComment:bool) (line:string) =
         if inMultiLineComment then lines, not ((line.Trim ()).EndsWith MULTI_LINE_COMMENT__ENDS)
         else

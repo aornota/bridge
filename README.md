@@ -1,6 +1,15 @@
 # ![bridge](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/tpoc-32x32.png) | bridge (pre-α)
 
-{file:TEMP-NMB.md
+## TEMP-NMB...
+
+Cards: ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)A | ![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)7 | ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)3 | ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)J
+
+Auction: 1![H](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/H.png) | 3![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png) | - | - | **dbl** | _**rdbl**_ | ...
+
+
+Full hand: {**_WARNING_ -> Unprocessed tag:** | s:AK63 h:T42 d:- c:AQJT62 --shape --hcp |}
+
+Partial hand: {**_WARNING_ -> Unprocessed tag:** | s:3 h:T d:- c:JT6 -p |}
 
 
 ## Table of contents
