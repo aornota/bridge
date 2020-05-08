@@ -39,13 +39,13 @@ let private processBidTag (fileInfo:FileInfo) (match':Match) =
     | Ok bid -> bid.MdString
     | Error error -> failwithf "%s -> Bid tag %s is invalid: %s" fileInfo.FullName match'.Value error
 
-let private anyTag = Regex "{.+}"
+let private anyTag = Regex "{.*}"
 let private processedUnprocessedTag (logger:ILogger) (fileInfo:FileInfo) (match':Match) =
     let tag = matchContents match'
     if tag = TOC || tag.StartsWith UNPROCESSED_TAG_WARNING then match'.Value
     else
         logger.Warning ("{file} -> Unprocessed tag: {tag}", fileInfo.FullName, match'.Value)
-        sprintf "{%s %s}" UNPROCESSED_TAG_WARNING tag
+        sprintf "{%s%s}" UNPROCESSED_TAG_WARNING tag
 
 let rec private processFile (logger:ILogger) (fileInfo:FileInfo) =
     let partialPath = sprintf @"..\%s\%s" fileInfo.Directory.Name fileInfo.Name
@@ -94,8 +94,6 @@ let processMd logger srcDir =
             logger.Warning ("Multiple {tag} tags found", match'.Value)
             contents
 
-    (* TEMP-NMB...
-    logger.Debug ("Processed contents:\n{contents}", contents) *)
     logger.Information "...finished processing"
     let readmeFile = Path.Combine (rootFileInfo.Directory.Parent.Parent.FullName, "README.md")
     logger.Information ("Writing {readme}...", readmeFile)
