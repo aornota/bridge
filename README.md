@@ -6,9 +6,11 @@ Cards: ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/reso
 
 Auction: 1![H](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/H.png) | 3![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png) | - | - | **dbl** | _**rdbl**_ | ...
 
+
 Full hand: {| s:AK63 h:T42 d:- c:AQJT62 --shape --hcp |}
 
 Partial hand: {| s:3 h:T d:- c:JT6 -p |}
+
 
 ## Table of contents
 
@@ -35,7 +37,6 @@ _TODO-NMB: Create programmatically..._
   * [Penalty doubles](#Penalty_doubles)
 * [**Recommended reading**](#Recommended_reading)
 
-
 ## <a name="Introduction"> Introduction
 
 _Coming soon..._
@@ -45,7 +46,6 @@ _Coming soon..._
 ### <a name="Why_5-card_majors"> Why 5-card majors?
 
 ### <a name="Why_2-over-1_game_forcing"> Why 2-over-1 game forcing?
-
 
 ## <a name="Uncontested_auctions"> Uncontested auctions
 
@@ -59,20 +59,17 @@ _Coming soon..._
 
 #### <a name="1D_and_1C_opening_bids"> 1![D](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/D.png) and 1![C](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/C.png) opening bids
 
-
 ### <a name="Strong_opening_bids"> Strong opening bids
 
 #### <a name="2NT_opening_bid"> 2![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png) opening bid
 
 #### <a name="2C-opening-bid"> 2![C](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/C.png) opening bid
 
-
 ### <a name="Weak_(pre-emptive)_opening_bids"> Weak (pre-emptive) opening bids
 
 #### <a name="2S_and_2H_opening_bids"> 2![S](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/S.png) and 2![H](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/H.png) opening bids
 
 #### <a name="Higher-level_pre-empts"> Higher-level pre-empts
-
 
 _...and coming later..._
 
@@ -84,7 +81,6 @@ _...and coming later..._
 - [ ] Inverted minors
 - [ ] Gerber
 - [ ] Roman key card Blackwood
-
 
 ## <a name="Competitive_auctions"> Competitive auctions
 
@@ -104,7 +100,6 @@ _...and coming later..._
 - [ ] Michaels cue-bid
 - [ ] Unusual no-trump
 - [ ] Competing over 1NT
-
 
 ## <a name="Recommended_reading"> Recommended reading
 
@@ -131,4 +126,3 @@ _Coming soon..._
 #### Terence Reese: _Play These Hands With Me_
 
 #### Robert F. MacKinnon: _Bridge, Probablity & Information_
-

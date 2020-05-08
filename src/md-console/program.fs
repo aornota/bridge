@@ -35,6 +35,8 @@ let private debugOrRelease =
     "Release"
 #endif
 
+let rec private findSrcDir (currentDir:DirectoryInfo) = if currentDir.Name = "src" then currentDir.FullName else findSrcDir currentDir.Parent
+
 let private mainAsync argv = async {
     writeNewLine "Running " ConsoleColor.Green
     write debugOrRelease ConsoleColor.DarkYellow
@@ -42,8 +44,7 @@ let private mainAsync argv = async {
     write (sprintf " %A" argv) ConsoleColor.DarkGreen
     write "...\n\n" ConsoleColor.Green
 
-    // TODO-NMB: Recursively look for 'src' folder, rather than assuming that this is the immediate parent of the current folder (e.g. in case run from ...\bin\[Debug|Release]\...)?...
-    try processMd Log.Logger (Path.Combine ((DirectoryInfo Environment.CurrentDirectory).Parent.FullName, "md"))
+    try processMd Log.Logger (findSrcDir (DirectoryInfo Environment.CurrentDirectory))
     with | exn -> sourcedLogger.Error ("Unexpected error:\n\t{errorMessage}", exn.Message)
 
     writeNewLine "Press any key to exit..." ConsoleColor.Green
