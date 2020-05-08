@@ -15,10 +15,14 @@ let [<Literal>] private SINGLE_LINE_COMMENT = "//"
 let [<Literal>] private MULTI_LINE_COMMENT__STARTS = "(*"
 let [<Literal>] private MULTI_LINE_COMMENT__ENDS = "*)"
 
+let [<Literal>] private TOC = "toc"
+
+let [<Literal>] private UNPROCESSED_TAG_WARNING = "**_WARNING_ -> Unprocessed tag:**"
+
 let matchContents (match':Match) = match'.Value.Substring (1, match'.Value.Length - 2) // i.e. match' should be "{contents}"
 
 let private fileTag = Regex "{file:.+}"
-let private processFileTag (fileInfo:FileInfo) (processFile:FileInfo -> string) (match':Match) =
+let private processFileTag (processFile:FileInfo -> string) (fileInfo:FileInfo) (match':Match) =
     processFile (FileInfo (Path.Combine (fileInfo.Directory.FullName, (matchContents match').Substring 5)))
 
 let private cardTag = Regex "{[AKQJT98765432][cdhs]}"
@@ -26,18 +30,22 @@ let private processCardTag (fileInfo:FileInfo) (match':Match) =
     let tag = matchContents match'
     match Card.ofString tag with
     | Ok card -> card.MdString
-    | Error error -> failwithf "%s -> Card tag '%s' is invalid: %s" fileInfo.FullName tag error
+    | Error error -> failwithf "%s -> Card tag %s is invalid: %s" fileInfo.FullName match'.Value error
 
 let private bidTag = Regex "{[1234567]([CDHS]|NT)}|{-}|{pass}|{dbl}|{rdbl}"
 let private processBidTag (fileInfo:FileInfo) (match':Match) =
     let tag = matchContents match'
     match Bid.ofString tag with
     | Ok bid -> bid.MdString
-    | Error error -> failwithf "%s -> Bid tag '%s' is invalid: %s" fileInfo.FullName tag error
-
-let private tocTag = Regex "{toc}"
+    | Error error -> failwithf "%s -> Bid tag %s is invalid: %s" fileInfo.FullName match'.Value error
 
 let private anyTag = Regex "{.+}"
+let private processedUnprocessedTag (logger:ILogger) (fileInfo:FileInfo) (match':Match) =
+    let tag = matchContents match'
+    if tag = TOC || tag.StartsWith UNPROCESSED_TAG_WARNING then match'.Value
+    else
+        logger.Warning ("{file} -> Unprocessed tag: {tag}", fileInfo.FullName, match'.Value)
+        sprintf "{%s %s}" UNPROCESSED_TAG_WARNING tag
 
 let rec private processFile (logger:ILogger) (fileInfo:FileInfo) =
     let partialPath = sprintf @"..\%s\%s" fileInfo.Directory.Name fileInfo.Name
@@ -54,18 +62,17 @@ let rec private processFile (logger:ILogger) (fileInfo:FileInfo) =
             (if not inMultiLineComment then line :: lines else lines), inMultiLineComment
     let lines, _ = lines |> List.fold folder ([], false)
     let contents = lines |> List.rev |> String.concat Environment.NewLine
-    let contents = fileTag.Replace (contents, MatchEvaluator (processFileTag fileInfo (processFile logger)))
+    let contents = fileTag.Replace (contents, MatchEvaluator (processFileTag (processFile logger) fileInfo))
     let contents = cardTag.Replace (contents, MatchEvaluator (processCardTag fileInfo))
     let contents = bidTag.Replace (contents, MatchEvaluator (processBidTag fileInfo))
 
     // TODO-NMB: More tags (e.g. hands | auctions? | deals?)...
 
-    anyTag.Matches contents
-    |> List.ofSeq
-    |> List.filter (fun match' -> not (tocTag.IsMatch match'.Value))
-    |> List.iter (fun match' -> logger.Warning ("{file} -> Unprocessed tag {tag}", fileInfo.FullName, match'.Value))
+    let contents = anyTag.Replace (contents, MatchEvaluator (processedUnprocessedTag logger fileInfo))
     logger.Debug ("...processed {partialPath}", partialPath)
     contents
+
+let private tocTag = Regex (sprintf "{%s}" TOC)
 
 let processMd logger srcDir =
     let logger = logger |> sourcedLogger SOURCE
