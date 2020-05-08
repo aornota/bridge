@@ -1,4 +1,4 @@
-# ![bridge](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/tpoc-32x32.png) | bridge (pre-α)
+# ![bridge](https:
 
 ## TEMP-NMB...
 
@@ -9,7 +9,7 @@ Auction: 1![H](https://raw.githubusercontent.com/aornota/bridge/master/src/resou
 
 Full hand: {| s:AK63 h:T42 d:- c:AQJT62 --shape --hcp |}
 
-Partial hand: {| s:3 h:T d:- c:JT6 -p |}
+Partial hand: {| s:3 h:T d:- c:JT6 -p |} 
 
 
 ## Table of contents

@@ -11,6 +11,10 @@ open System.Text.RegularExpressions
 
 let [<Literal>] private SOURCE = "MdConsole.Process"
 
+let [<Literal>] private SINGLE_LINE_COMMENT = "//"
+let [<Literal>] private MULTI_LINE_COMMENT__STARTS = "(*"
+let [<Literal>] private MULTI_LINE_COMMENT__ENDS = "*)"
+
 let matchContents (match':Match) = match'.Value.Substring (1, match'.Value.Length - 2) // i.e. match' should be "{contents}"
 
 let private fileTag = Regex "{file:.+}"
@@ -41,11 +45,12 @@ let rec private processFile (logger:ILogger) (fileInfo:FileInfo) =
     let lines =
         File.ReadAllLines fileInfo.FullName
         |> List.ofArray
-        |> List.filter (fun line -> not ((line.Trim ()).StartsWith ("//")))
+        |> List.filter (fun line -> not ((line.Trim ()).StartsWith SINGLE_LINE_COMMENT))
+        |> List.map (fun line -> match line.IndexOf SINGLE_LINE_COMMENT with | index when index > 0 -> line.Substring (0, index) | _ -> line)
     let folder (lines:string list, inMultiLineComment:bool) (line:string) =
-        if inMultiLineComment then lines, not ((line.Trim ()).EndsWith ("*)"))
+        if inMultiLineComment then lines, not ((line.Trim ()).EndsWith MULTI_LINE_COMMENT__ENDS)
         else
-            let inMultiLineComment = (line.Trim ()).StartsWith ("(*")
+            let inMultiLineComment = (line.Trim ()).StartsWith MULTI_LINE_COMMENT__STARTS
             (if not inMultiLineComment then line :: lines else lines), inMultiLineComment
     let lines, _ = lines |> List.fold folder ([], false)
     let contents = lines |> List.rev |> String.concat Environment.NewLine
@@ -68,7 +73,18 @@ let processMd logger srcDir =
     logger.Information "Starting processing..."
     let contents = processFile logger rootFileInfo
 
-    // TODO-NMB: Generate table-of-contents (if {toc} tag)?...
+    let contents =
+        match tocTag.Matches contents |> List.ofSeq with
+        | [] -> contents
+        | [ match' ] ->
+            // TODO-NMB: Generate table-of-contents...
+            (* logger.Information "Generating table-of-contents..."
+            let contents = ...
+            logger.Information "...table-of-contents generated" *)
+            contents
+        | match' :: _ ->
+            logger.Warning ("Multiple {tag} tags found", match'.Value)
+            contents
 
     (* TEMP-NMB...
     logger.Debug ("Processed contents:\n{contents}", contents) *)
