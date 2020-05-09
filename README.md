@@ -1,6 +1,6 @@
 # ![bridge](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/tpoc-32x32.png) | bridge (pre-α)
 
-# TEMP-NMB...
+##### TEMP-NMB...
 
 Cards: ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)A | ![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)7 | ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)3 | ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)J
 
@@ -19,7 +19,7 @@ Partial hand: {**_WARNING_ -> Unprocessed tag:**| s:3 h:T d:- c:JT6 -p |}
   * [Why 2-over-1 game forcing](#Why_2-over-1_game_forcing)
 * [**Uncontested auctions**](#Uncontested_auctions)
   * [Standard opening bids](#Standard_opening_bids)
-    * [_1NT opening bid_](#1NT_opening_bid)
+    * [_1![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png) opening bid_](#1![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png)_opening_bid)
     * [_1S and 1H opening bids_](#1S_and_1H_opening_bids)
     * [_1D and 1C opening bids_](#1D_and_1C_opening_bids)
   * [Strong opening bids](#Strong_opening_bids)
@@ -50,7 +50,7 @@ _Coming soon..._
 
 ### <a name="Standard_opening_bids"> Standard opening bids
 
-#### <a name="1NT_opening_bid"> 1![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png) opening bid
+#### <a name="1![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png)_opening_bid"> 1![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png) opening bid
 
 #### <a name="1S_and_1H_opening_bids"> 1![S](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/S.png) and 1![H](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/H.png) opening bids
 
