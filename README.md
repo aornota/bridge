@@ -1,18 +1,28 @@
 # ![bridge](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/tpoc-32x32.png) | bridge (pre-α)
 
-##### TEMP-NMB...
+##### Tag examples
 
 Cards: ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)A | ![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)7 | ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)3 | ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)J
 
-Auction: 1![H](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/H.png) | 3![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png) | - | - | **dbl** | _**rdbl**_ | ...
+Bids: 1![H](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/H.png) | 3![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png) | - | - | **dbl** | _**rdbl**_ | ...
 
-Full hand (with additional info):
+Full hands (some with additional info):
+
+> ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)542 ![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)KJ9 ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)QJ ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)AT862
+
+> ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)KQ64 ![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)A ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)QT93 ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)J874 -- Unbalanced (**4**-_1_-**4**-**4**)
+
+> ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)A6 ![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)AJ754 ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)KQT4 ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)AQ -- 20 HCP
 
 > ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)AK63 ![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)T42 ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)- ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)AQJT62 -- Unbalanced (_**4**_-3-_0_-**6**) | 14 HCP
 
+> ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)J63 ![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)54 ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)KT ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)QT7652 -- Semi-balanced (3-_2_-_2_-**6**) | 6 HCP
+
+> ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)Q92 ![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)AJ7 ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)KQT4 ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)843 -- Balanced (_3_-_3_-**4**-_3_) | 12 HCP
+
 Partial hand:
 
-> ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)3 ![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)T ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)- ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)JT6
+> ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)5 ![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)- ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)Q ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)A98
 
 
 ## Table of contents

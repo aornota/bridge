@@ -21,7 +21,8 @@ let [<Literal>] private TOC = "toc"
 let [<Literal>] private UNPROCESSED_TAG_WARNING = "**_WARNING_ -> Unprocessed tag:**"
 
 let private fileTag = Regex "{file:(.+)}" // e.g. {file:1000 Introduction\Introduction.md}
-let private processFileTag (processFile:FileInfo -> string) (fileInfo:FileInfo) (match':Match) = processFile (FileInfo (Path.Combine (fileInfo.Directory.FullName, match'.Groups.[1].Value)))
+let private processFileTag (processFile:FileInfo -> string) (fileInfo:FileInfo) (match':Match) =
+    processFile (FileInfo (Path.Combine (fileInfo.Directory.FullName, match'.Groups.[1].Value)))
 
 let private cardTag = Regex "{([AKQJT98765432][cdhs])}" // e.g. {As} | {7h} | {3d} | {Jc}
 let private processCardTag (fileInfo:FileInfo) (match':Match) =
@@ -42,7 +43,7 @@ let private processHandTag (fileInfo:FileInfo) (match':Match) =
     let suitWithRanks (suit:Suit) (splits:string list) =
         let suitChar = match suit with | Spade -> 's' | Heart -> 'h' | Diamond -> 'd' | Club -> 'c'
         match splits |> List.filter (fun split -> split.StartsWith (sprintf "%c:" suitChar)) with
-        | [] -> Error (sprintf "No split for %A" suit)
+        | [] -> Error (sprintf "No split for %As" suit)
         | [ split ] ->
             match split.Length with
             | n when n > 2 ->
@@ -54,9 +55,12 @@ let private processHandTag (fileInfo:FileInfo) (match':Match) =
                     | error :: _ -> Error error
                     | _ ->
                         let ranks = ranks |> List.choose (fun rank -> match rank with | Ok rank -> Some rank | Error _ -> None) |> List.sort
-                        Ok (suit, ranks)
-            | _ -> Error (sprintf "No cards for split for %A" suit)
-        | _ :: _ -> Error (sprintf "Multiple splits for %A" suit)
+                        // TODO-NMB: Check for repeated Ranks...
+                        let uniqueRanks = ranks |> List.groupBy id
+                        if uniqueRanks.Length <> ranks.Length then Error (sprintf "Repeated cards for %As" suit)
+                        else Ok (suit, ranks)
+            | _ -> Error (sprintf "No cards for %As" suit)
+        | _ :: _ -> Error (sprintf "Multiple splits for %As" suit)
     let suitWithRanksMd (suit:Suit, ranks:Rank list) = sprintf "%s%s" suit.MdString (if ranks.Length > 0 then ranks |> List.map (fun rank -> rank.MdString) |> String.concat "" else "-")
     let cardsMd spadeRanks heartRanks diamondRanks clubRanks =
         sprintf "%s %s %s %s" (suitWithRanksMd spadeRanks) (suitWithRanksMd heartRanks) (suitWithRanksMd diamondRanks) (suitWithRanksMd clubRanks)
@@ -73,6 +77,7 @@ let private processHandTag (fileInfo:FileInfo) (match':Match) =
         let showHcp = splits |> List.exists (fun split -> split = "--hcp")
         return!
             match cardCount, isPartial with
+            | n, _ when n > 13 -> Error "Hand contains more than 13 cards"
             | 13, true -> Error "--partial flag should only be used when hand contains fewer than 13 cards"
             | 13, false ->
                 let cardsMd = cardsMd spadeRanks heartRanks diamondRanks clubRanks
@@ -125,7 +130,7 @@ let private processHandTag (fileInfo:FileInfo) (match':Match) =
     | Error error -> failwithf "%s -> Hand tag %s is invalid: %s" fileInfo.FullName match'.Value error
 
 let private anyTag = Regex "{(.*)}"
-let private processedUnprocessedTag (logger:ILogger) (fileInfo:FileInfo) (match':Match) =
+let private processUnprocessedTag (logger:ILogger) (fileInfo:FileInfo) (match':Match) =
     let tag = match'.Groups.[1].Value
     if tag = TOC || tag.StartsWith UNPROCESSED_TAG_WARNING then match'.Value
     else
@@ -155,7 +160,7 @@ let rec private processFile (logger:ILogger) (fileInfo:FileInfo) =
 
     // TODO-NMB: More tags, e.g. auctions? deals?...
 
-    let contents = anyTag.Replace (contents, MatchEvaluator (processedUnprocessedTag logger fileInfo))
+    let contents = anyTag.Replace (contents, MatchEvaluator (processUnprocessedTag logger fileInfo))
     logger.Debug ("...processed {partialPath}", partialPath)
     contents
 
