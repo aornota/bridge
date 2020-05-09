@@ -1,6 +1,6 @@
 # <a name="Introduction"> Introduction
 
-_Coming soon..._
+_Work-in-progress towards bridge notes: bidding | declarer play | defence | ..._
 
 
 

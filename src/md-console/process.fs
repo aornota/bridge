@@ -55,7 +55,6 @@ let private processHandTag (fileInfo:FileInfo) (match':Match) =
                     | error :: _ -> Error error
                     | _ ->
                         let ranks = ranks |> List.choose (fun rank -> match rank with | Ok rank -> Some rank | Error _ -> None) |> List.sort
-                        // TODO-NMB: Check for repeated Ranks...
                         let uniqueRanks = ranks |> List.groupBy id
                         if uniqueRanks.Length <> ranks.Length then Error (sprintf "Repeated cards for %As" suit)
                         else Ok (suit, ranks)

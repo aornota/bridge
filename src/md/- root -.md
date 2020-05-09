@@ -9,7 +9,7 @@
 
 {file:1000 Introduction\- Introduction -.md}
 
-// TODO-NMB...{file:2000 Basic principles\- Basic principles -.md}
+{file:2000 Basic principles\- Basic principles -.md}
 
 {file:3000 Uncontested auctions\- Uncontested auctions -.md}
 

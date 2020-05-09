@@ -4,6 +4,12 @@
 ## Table of contents
 
 * [**Introduction**](#Introduction)
+* [**Basic principles**](#Basic_principles)
+  * [_**The three ways to win tricks**_](#The_three_ways_to_win_tricks)
+  * [_**The importance of the major suits**_](#The_importance_of_the_major_suits)
+  * [_**The importance of fits**_](#The_importance_of_fits)
+  * [_**Hand evaluation**_](#Hand_evaluation)
+  * [_**Bidding priorities**_](#Bidding_priorities)
 * [**Uncontested auctions**](#Uncontested_auctions)
   * [_**Standard opening bids**_](#Standard_opening_bids)
     * [1NT opening bid](#1NT_opening_bid)
@@ -24,18 +30,52 @@
 
 # <a name="Introduction"> Introduction
 
+_Work-in-progress towards bridge notes: bidding | declarer play | defence | ..._
+
+
+
+
+
+
+# <a name="Basic_principles"> Basic principles
+
 _Coming soon..._
 
 
 
+## <a name="The_three_ways_to_win_tricks"> The three ways to win tricks
 
+_Coming soon..._
+
+
+
+## <a name="The_importance_of_the_major_suits"> The importance of the major suits
+
+_Coming soon..._
+
+
+
+## <a name="The_importance_of_fits"> The importance of fits
+
+_Coming soon..._
+
+
+
+## <a name="Hand_evaluation"> Hand evaluation
+
+_Coming soon..._
+
+
+
+## <a name="Bidding_priorities"> Bidding priorities
+
+_Coming soon..._
 
 
 
 # <a name="Uncontested_auctions"> Uncontested auctions
 
 _Coming soon..._
-
 
 
 ## <a name="Standard_opening_bids"> Standard opening bids

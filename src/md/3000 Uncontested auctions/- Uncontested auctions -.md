@@ -2,7 +2,7 @@
 
 _Coming soon..._
 
-
+// TODO-NMB: Rationale for requiring ca. 13 AP to open the bidding | ...
 
 {file:3100 Standard opening bids\- Standard opening bids -.md}
 
