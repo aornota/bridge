@@ -46,7 +46,7 @@
     * [1D and 1C opening bids](#1D_and_1C_opening_bids)
   * [_**Strong opening bids**_](#Strong_opening_bids)
     * [2NT opening bid](#2NT_opening_bid)
-    * [2C-opening-bid](#2C-opening-bid)
+    * [2C opening bid](#2C_opening_bid)
   * [_**Weak (pre-emptive) opening bids**_](#Weak_(pre-emptive)_opening_bids)
     * [2S and 2H opening bids](#2S_and_2H_opening_bids)
     * [Higher-level pre-empts](#Higher-level_pre-empts)
@@ -102,7 +102,7 @@ _Coming soon..._
 
 ### <a name="2NT_opening_bid"> 2![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png) opening bid
 
-### <a name="2C-opening-bid"> 2![C](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/C.png) opening bid
+### <a name="2C_opening_bid"> 2![C](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/C.png) opening bid
 
 ## <a name="Weak_(pre-emptive)_opening_bids"> Weak (pre-emptive) opening bids
 

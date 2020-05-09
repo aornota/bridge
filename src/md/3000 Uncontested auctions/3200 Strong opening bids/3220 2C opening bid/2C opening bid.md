@@ -1,1 +1,1 @@
-### <a name="2C-opening-bid"> {2C} opening bid
+### <a name="2C_opening_bid"> {2C} opening bid
