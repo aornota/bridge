@@ -1,10 +1,14 @@
-# Tag examples
+## Tag examples
 
-Cards: {As} | {7h} | {3d} | {Jc}
+#### Cards
 
-Bids: {1H} | {3NT} | {-} | {pass} | {dbl} | {rdbl} | ...
+{As} | {7h} | {3d} | {Jc}
 
-Full hands (some with additional info):
+#### Bids
+
+{1H} | {3NT} | {-} | {pass} | {dbl} | {rdbl} | ...
+
+#### Full hands (some with additional info)
 
 > {| s:542 h:KJ9 d:QJ c:AT862 |}
 
@@ -20,7 +24,7 @@ Full hands (some with additional info):
 
 // > {| s: h: d: c: --shape --hcp |}
 
-Partial hand:
+#### Partial hand
 
 > {| s:5 h:- d:Q c:A98 --partial |}
 

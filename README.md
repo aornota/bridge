@@ -1,12 +1,16 @@
 # ![bridge](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/tpoc-32x32.png) | bridge (pre-α)
 
-# Tag examples
+## Tag examples
 
-Cards: ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)A | ![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)7 | ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)3 | ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)J
+#### Cards
 
-Bids: 1![H](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/H.png) | 3![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png) | - | - | **dbl** | _**rdbl**_ | ...
+![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)A | ![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)7 | ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)3 | ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)J
 
-Full hands (some with additional info):
+#### Bids
+
+1![H](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/H.png) | 3![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png) | - | - | **dbl** | _**rdbl**_ | ...
+
+#### Full hands (some with additional info)
 
 > ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)542 ![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)KJ9 ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)QJ ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)AT862
 
@@ -21,7 +25,7 @@ Full hands (some with additional info):
 > ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)Q92 ![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)AJ7 ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)KQT4 ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)843 -- Balanced (_3_-_3_-**4**-_3_) | 12 HCP
 
 
-Partial hand:
+#### Partial hand
 
 > ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)5 ![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)- ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)Q ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)A98
 
