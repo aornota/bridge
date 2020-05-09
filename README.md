@@ -30,8 +30,8 @@ Partial hand:
 
 * [**Introduction**](#Introduction)
   * [_**Why weak no-trump?**_](#Why_weak_no-trump?)
-  * [_**Why 5-card majors**_](#Why_5-card_majors)
-  * [_**Why 2-over-1 game forcing**_](#Why_2-over-1_game_forcing)
+  * [_**Why 5-card majors?**_](#Why_5-card_majors?)
+  * [_**Why 2-over-1 game forcing?**_](#Why_2-over-1_game_forcing?)
 * [**Uncontested auctions**](#Uncontested_auctions)
   * [_**Standard opening bids**_](#Standard_opening_bids)
     * [1NT opening bid](#1NT_opening_bid)
@@ -72,9 +72,9 @@ _Coming soon..._
 
 ## <a name="Why_weak_no-trump?"> Why weak no-trump?
 
-## <a name="Why_5-card_majors"> Why 5-card majors?
+## <a name="Why_5-card_majors?"> Why 5-card majors?
 
-## <a name="Why_2-over-1_game_forcing"> Why 2-over-1 game forcing?
+## <a name="Why_2-over-1_game_forcing?"> Why 2-over-1 game forcing?
 
 # <a name="Uncontested_auctions"> Uncontested auctions
 
