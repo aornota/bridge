@@ -5,4 +5,4 @@ _...and coming later..._
 - [ ] Unassuming cue-bid
 - [ ] Michaels cue-bid
 - [ ] Unusual no-trump
-- [ ] Competing over 1NT
+- [ ] Competing over {1NT}

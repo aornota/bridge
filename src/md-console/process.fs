@@ -76,15 +76,15 @@ let private tocTag = Regex (sprintf "{%s}" TOC)
 
 let private processTocTag (logger:ILogger) (contents:string) (match':Match) =
     let namedAnchor = Regex "<a name=\"(.+)\">"
-    let name (line:string) =
+    let linkAndText line =
         let match' = namedAnchor.Match line
         if match'.Success then
             let anchor = match'.Groups.[1].Value
             Some (anchor, anchor.Replace ("_", " "))
         else None
-    let (|H2|_|) (line:string) = if (line.Trim ()).StartsWith "## " then name line else None
-    let (|H3|_|) (line:string) = if (line.Trim ()).StartsWith "### " then name line else None
-    let (|H4|_|) (line:string) = if (line.Trim ()).StartsWith "#### " then name line else None
+    let (|H2|_|) (line:string) = if (line.Trim ()).StartsWith "## " then linkAndText line else None
+    let (|H3|_|) (line:string) = if (line.Trim ()).StartsWith "### " then linkAndText line else None
+    let (|H4|_|) (line:string) = if (line.Trim ()).StartsWith "#### " then linkAndText line else None
     logger.Information "Generating table-of-contents..."
     let toc =
         contents.Split '\n'
@@ -96,9 +96,6 @@ let private processTocTag (logger:ILogger) (contents:string) (match':Match) =
             | H4 (link, text) -> Some (sprintf "    * [_%s_](#%s)" text link)
             | _ -> None)
         |> String.concat "\n"
-
-    logger.Debug ("toc:\n{toc}", toc)
-
     logger.Information "...table-of-contents generated"
     toc
 

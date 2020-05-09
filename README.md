@@ -72,7 +72,7 @@ _...and coming later..._
 
 - [ ] Fourth suit forcing
 - [ ] New minor forcing
-- [ ] Jacoby 2NT
+- [ ] Jacoby 2![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png)
 - [ ] Splinters
 - [ ] Bergen raises
 - [ ] Inverted minors
@@ -96,7 +96,7 @@ _...and coming later..._
 - [ ] Unassuming cue-bid
 - [ ] Michaels cue-bid
 - [ ] Unusual no-trump
-- [ ] Competing over 1NT
+- [ ] Competing over 1![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png)
 
 ## <a name="Recommended_reading"> Recommended reading
 
