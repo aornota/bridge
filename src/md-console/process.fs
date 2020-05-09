@@ -4,7 +4,9 @@ open Aornota.Bridge.Common.Domain
 open Aornota.Bridge.Common.SourcedLogger
 open Aornota.Bridge.MdConsole.Domain
 
+open FsToolkit.ErrorHandling
 open Serilog
+open System
 open System.IO
 open System.Text.RegularExpressions
 
@@ -18,29 +20,98 @@ let [<Literal>] private TOC = "toc"
 
 let [<Literal>] private UNPROCESSED_TAG_WARNING = "**_WARNING_ -> Unprocessed tag:**"
 
-let matchContents (match':Match) = match'.Value.Substring (1, match'.Value.Length - 2) // i.e. match' should be "{contents}"
+let private fileTag = Regex "{file:(.+)}" // e.g. {file:1000 Introduction\Introduction.md}
+let private processFileTag (processFile:FileInfo -> string) (fileInfo:FileInfo) (match':Match) = processFile (FileInfo (Path.Combine (fileInfo.Directory.FullName, match'.Groups.[1].Value)))
 
-let private fileTag = Regex "{file:.+}"
-let private processFileTag (processFile:FileInfo -> string) (fileInfo:FileInfo) (match':Match) =
-    processFile (FileInfo (Path.Combine (fileInfo.Directory.FullName, (matchContents match').Substring 5)))
-
-let private cardTag = Regex "{[AKQJT98765432][cdhs]}"
+let private cardTag = Regex "{([AKQJT98765432][cdhs])}" // e.g. {As} | {7h} | {3d} | {Jc}
 let private processCardTag (fileInfo:FileInfo) (match':Match) =
-    let tag = matchContents match'
+    let tag = match'.Groups.[1].Value
     match Card.ofString tag with
     | Ok card -> card.MdString
     | Error error -> failwithf "%s -> Card tag %s is invalid: %s" fileInfo.FullName match'.Value error
 
-let private bidTag = Regex "{[1234567]([CDHS]|NT)}|{-}|{pass}|{dbl}|{rdbl}"
+let private bidTag = Regex "{([1234567]([CDHS]|NT)|-|pass|dbl|rdbl)}" // e.g. {1H} | {3NT} | {-} | {pass} | {dbl} | {rdbl}
 let private processBidTag (fileInfo:FileInfo) (match':Match) =
-    let tag = matchContents match'
+    let tag = match'.Groups.[1].Value
     match Bid.ofString tag with
     | Ok bid -> bid.MdString
     | Error error -> failwithf "%s -> Bid tag %s is invalid: %s" fileInfo.FullName match'.Value error
 
-let private anyTag = Regex "{.*}"
+let private handTag = Regex "{\|(.+)\|}" // e.g. {| s:AK63 h:T42 d:- c:AQJT62 --shape --hcp |} | {| s:3 h:T d:- c:JT6 --partial |}
+let private processHandTag (fileInfo:FileInfo) (match':Match) =
+    let suitWithRanks (suit:Suit) (splits:string list) =
+        let suitChar = match suit with | Spade -> 's' | Heart -> 'h' | Diamond -> 'd' | Club -> 'c'
+        match splits |> List.filter (fun split -> split.StartsWith (sprintf "%c:" suitChar)) with
+        | [] -> Error (sprintf "No split for %A" suit)
+        | [ split ] ->
+            match split.Length with
+            | n when n > 2 ->
+                let ranks = split.Substring 2
+                if ranks = "-" then Ok (suit, [])
+                else
+                    let ranks = ranks |> List.ofSeq |> List.map Rank.ofChar
+                    match ranks |> List.choose (fun rank -> match rank with | Ok _ -> None | Error error -> Some error) with
+                    | error :: _ -> Error error
+                    | _ ->
+                        let ranks = ranks |> List.choose (fun rank -> match rank with | Ok rank -> Some rank | Error _ -> None) |> List.sort
+                        Ok (suit, ranks)
+            | _ -> Error (sprintf "No cards for split for %A" suit)
+        | _ :: _ -> Error (sprintf "Multiple splits for %A" suit)
+    let suitWithRanksMd (suit:Suit, ranks:Rank list) =
+        let ranks = if ranks.Length > 0 then ranks |> List.map (fun rank -> rank.MdString) |> String.concat "" else "-"
+        sprintf "%s%s" suit.MdString ranks
+    let cardsMd spadeRanks heartRanks diamondRanks clubRanks =
+        sprintf "%s %s %s %s" (suitWithRanksMd spadeRanks) (suitWithRanksMd heartRanks) (suitWithRanksMd diamondRanks) (suitWithRanksMd clubRanks)
+    let tag = match'.Groups.[1].Value
+    let splits = tag.Split (' ', StringSplitOptions.RemoveEmptyEntries) |> List.ofArray
+    let result = result {
+        let! spadeRanks = suitWithRanks Spade splits
+        let! heartRanks = suitWithRanks Heart splits
+        let! diamondRanks = suitWithRanks Diamond splits
+        let! clubRanks = suitWithRanks Club splits
+        let cardCount = (snd spadeRanks).Length + (snd heartRanks).Length + (snd diamondRanks).Length + (snd clubRanks).Length
+        let isPartial = splits |> List.exists (fun split -> split = "--partial")
+        let showShape = splits |> List.exists (fun split -> split = "--shape")
+        let showHcp = splits |> List.exists (fun split -> split = "--hcp")
+        return!
+            match cardCount, isPartial with
+            | 13, true -> Error "--partial flag should only be used when hand contains fewer than 13 cards"
+            | 13, false ->
+                let cardsMd = cardsMd spadeRanks heartRanks diamondRanks clubRanks
+                let shapeMd = ""
+                let hcpMd = ""
+                let shapeMd, hcpMd =
+                    if showShape || showHcp then
+                        let spades = snd spadeRanks |> List.map (fun rank -> Card (rank, Spade))
+                        let hearts = snd heartRanks |> List.map (fun rank -> Card (rank, Heart))
+                        let diamonds = snd diamondRanks |> List.map (fun rank -> Card (rank, Diamond))
+                        let clubs = snd clubRanks |> List.map (fun rank -> Card (rank, Club))
+                        let hand = spades @ hearts @ diamonds @ clubs
+                        let shapeMd =
+                            if showShape then
+                                " | TODO-NMB: Shape..."
+                            else ""
+                        let hcpMd =
+                            if showHcp then
+                                match hcp hand with
+                                | Ok hcp -> sprintf " | %i HCP" hcp // TODO-NMB: Space between number and "HCP" - or not?...
+                                | Error error -> failwithf "%s -> Hand tag %s is invalid: %s" fileInfo.FullName match'.Value error
+                            else ""
+                        shapeMd, hcpMd
+                    else "", ""
+                Ok (sprintf "%s%s%s" cardsMd shapeMd hcpMd)
+            | _, true ->
+                if showHcp then Error "--hcp flag should not be used when hand contains fewer than 13 cards"
+                else if showShape then Error "--shape flag should not be used when hand contains fewer than 13 cards"
+                else Ok (cardsMd spadeRanks heartRanks diamondRanks clubRanks)
+            | _, false -> Error "--partial flag must be used when hand contains fewer than 13 cards" }
+    match result with
+    | Ok text -> text
+    | Error error -> failwithf "%s -> Hand tag %s is invalid: %s" fileInfo.FullName match'.Value error
+
+let private anyTag = Regex "{(.*)}"
 let private processedUnprocessedTag (logger:ILogger) (fileInfo:FileInfo) (match':Match) =
-    let tag = matchContents match'
+    let tag = match'.Groups.[1].Value
     if tag = TOC || tag.StartsWith UNPROCESSED_TAG_WARNING then match'.Value
     else
         logger.Warning ("{file} -> Unprocessed tag: {tag}", fileInfo.FullName, match'.Value)
@@ -65,8 +136,9 @@ let rec private processFile (logger:ILogger) (fileInfo:FileInfo) =
     let contents = fileTag.Replace (contents, MatchEvaluator (processFileTag (processFile logger) fileInfo))
     let contents = cardTag.Replace (contents, MatchEvaluator (processCardTag fileInfo))
     let contents = bidTag.Replace (contents, MatchEvaluator (processBidTag fileInfo))
+    let contents = handTag.Replace (contents, MatchEvaluator (processHandTag fileInfo))
 
-    // TODO-NMB: More tags (e.g. hands | auctions? | deals?)...
+    // TODO-NMB: More tags, e.g. auctions? deals?...
 
     let contents = anyTag.Replace (contents, MatchEvaluator (processedUnprocessedTag logger fileInfo))
     logger.Debug ("...processed {partialPath}", partialPath)
