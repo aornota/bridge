@@ -29,38 +29,41 @@ Partial hand:
 # Table of contents
 
 * [**Introduction**](#Introduction)
-  * [Why weak no-trump?](#Why_weak_no-trump?)
-  * [Why 5-card majors](#Why_5-card_majors)
-  * [Why 2-over-1 game forcing](#Why_2-over-1_game_forcing)
+  * [_**Why weak no-trump?**_](#Why_weak_no-trump?)
+  * [_**Why 5-card majors**_](#Why_5-card_majors)
+  * [_**Why 2-over-1 game forcing**_](#Why_2-over-1_game_forcing)
 * [**Uncontested auctions**](#Uncontested_auctions)
-  * [Standard opening bids](#Standard_opening_bids)
-    * [_1NT opening bid_](#1NT_opening_bid)
-    * [_1S and 1H opening bids_](#1S_and_1H_opening_bids)
-    * [_1D and 1C opening bids_](#1D_and_1C_opening_bids)
-  * [Strong opening bids](#Strong_opening_bids)
-    * [_2NT opening bid_](#2NT_opening_bid)
-    * [_2C-opening-bid_](#2C-opening-bid)
-  * [Weak (pre-emptive) opening bids](#Weak_(pre-emptive)_opening_bids)
-    * [_2S and 2H opening bids_](#2S_and_2H_opening_bids)
-    * [_Higher-level pre-empts_](#Higher-level_pre-empts)
-  * [Fourth suit forcing](#Fourth_suit_forcing)
-  * [New minor forcing](#New_minor_forcing)
-  * [Splinters](#Splinters)
-  * [Jacoby 2NT](#Jacoby_2NT)
-  * [Bergen raises](#Bergen_raises)
-  * [Inverted minors](#Inverted_minors)
-  * [Gerber](#Gerber)
-  * [Roman key card Blackwood](#Roman_key_card_Blackwood)
+  * [_**Standard opening bids**_](#Standard_opening_bids)
+    * [1NT opening bid](#1NT_opening_bid)
+      * [_Stayman (2C) response_](#Stayman_(2C)_response)
+      * [_Transfer (2D | 2H | 2S | 2NT) responses_](#Transfer_(2D_|_2H_|_2S_|_2NT)_responses)
+      * [_Texas transfer (4D | 4H) responses_](#Texas_transfer_(4D_|_4H)_responses)
+    * [1S and 1H opening bids](#1S_and_1H_opening_bids)
+    * [1D and 1C opening bids](#1D_and_1C_opening_bids)
+  * [_**Strong opening bids**_](#Strong_opening_bids)
+    * [2NT opening bid](#2NT_opening_bid)
+    * [2C-opening-bid](#2C-opening-bid)
+  * [_**Weak (pre-emptive) opening bids**_](#Weak_(pre-emptive)_opening_bids)
+    * [2S and 2H opening bids](#2S_and_2H_opening_bids)
+    * [Higher-level pre-empts](#Higher-level_pre-empts)
+  * [_**Fourth suit forcing**_](#Fourth_suit_forcing)
+  * [_**New minor forcing**_](#New_minor_forcing)
+  * [_**Splinters**_](#Splinters)
+  * [_**Jacoby 2NT**_](#Jacoby_2NT)
+  * [_**Bergen raises**_](#Bergen_raises)
+  * [_**Inverted minors**_](#Inverted_minors)
+  * [_**Gerber**_](#Gerber)
+  * [_**Roman key card Blackwood**_](#Roman_key_card_Blackwood)
 * [**Competitive auctions**](#Competitive_auctions)
-  * [Overcalls](#Overcalls)
-  * [Take-out doubles](#Take-out_doubles)
-  * [Penalty doubles](#Penalty_doubles)
-  * [Negative doubles](#Negative_doubles)
-  * [Responsive doubles](#Responsive_doubles)
-  * [Unassuming cue-bid](#Unassuming_cue-bid)
-  * [Michaels cue-bid](#Michaels_cue-bid)
-  * [Unusual no-trump](#Unusual_no-trump)
-  * [Competing over 1NT](#Competing_over_1NT)
+  * [_**Overcalls**_](#Overcalls)
+  * [_**Take-out doubles**_](#Take-out_doubles)
+  * [_**Penalty doubles**_](#Penalty_doubles)
+  * [_**Negative doubles**_](#Negative_doubles)
+  * [_**Responsive doubles**_](#Responsive_doubles)
+  * [_**Unassuming cue-bid**_](#Unassuming_cue-bid)
+  * [_**Michaels cue-bid**_](#Michaels_cue-bid)
+  * [_**Unusual no-trump**_](#Unusual_no-trump)
+  * [_**Competing over 1NT**_](#Competing_over_1NT)
 * [**Recommended reading**](#Recommended_reading)
 
 # <a name="Introduction"> Introduction
@@ -83,6 +86,10 @@ _Coming soon..._
 
 #### <a name="Stayman_(2C)_response"> Stayman (2![C](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/C.png)) response
 
+#### <a name="Transfer_(2D_|_2H_|_2S_|_2NT)_responses"> Tranfer (2![D](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/D.png) | 2![H](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/H.png) | 2![S](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/S.png) | 2![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png)) responses
+
+#### <a name="Texas_transfer_(4D_|_4H)_responses"> Texas transfer (4![D](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/D.png) | 4![H](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/H.png)) responses
+
 ### <a name="1S_and_1H_opening_bids"> 1![S](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/S.png) and 1![H](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/H.png) opening bids
 
 ### <a name="1D_and_1C_opening_bids"> 1![D](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/D.png) and 1![C](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/C.png) opening bids
@@ -101,7 +108,7 @@ _Coming soon..._
 
 _...and coming later..._
 
-## <a name="Fourth_suit_forcing">] Fourth suit forcing
+## <a name="Fourth_suit_forcing"> Fourth suit forcing
 ## <a name="New_minor_forcing"> New minor forcing
 ## <a name="Splinters"> Splinters
 ## <a name="Jacoby_2NT"> Jacoby 2![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png)
@@ -133,24 +140,24 @@ _...and coming later..._
 
 _Coming soon..._
 
-## Mary Ann Dufresne and Marion Ellingsen: _Bridge With Bells & Whistles_ | _We Love The Majors_
+##### Mary Ann Dufresne and Marion Ellingsen: _Bridge With Bells & Whistles_ | _We Love The Majors_
 
-## Bill Treble: _Getting Into The Bidding_ | _Two Over One_ | _Defending At Bridge_
+##### Bill Treble: _Getting Into The Bidding_ | _Two Over One_ | _Defending At Bridge_
 
-## Jim Jackson: _One Trick At A Time_
+##### Jim Jackson: _One Trick At A Time_
 
-## Larry Cohen: _To Bid Or Not To Bid_
+##### Larry Cohen: _To Bid Or Not To Bid_
 
-## Roy Hughes: _The Contested Auction_ | _Building A Bidding System_
+##### Roy Hughes: _The Contested Auction_ | _Building A Bidding System_
 
-## Max Hardy: _Standard Bridge Bidding For The 21st Century_ | _Advanced Bridge Bidding For The 21st Century_
+##### Max Hardy: _Standard Bridge Bidding For The 21st Century_ | _Advanced Bridge Bidding For The 21st Century_
 
-## Andy Stark: _The Weak Notrump_
+##### Andy Stark: _The Weak Notrump_
 
-## David Bird: _Ten Ways To Improve Your Bridge_ | _10 More Ways To Improve Your Bridge_
+##### David Bird: _Ten Ways To Improve Your Bridge_ | _10 More Ways To Improve Your Bridge_
 
-## Paul Mendelsen: _The Right Way To Play Bridge_ | _Control The Bidding_ | _Winning Ways To Play Your Cards_ | _121 Tips For Better Bridge_ | _Guide To Duplicate Bridge_ | _The Golden Rules Of Bridge_
+##### Paul Mendelsen: _The Right Way To Play Bridge_ | _Control The Bidding_ | _Winning Ways To Play Your Cards_ | _121 Tips For Better Bridge_ | _Guide To Duplicate Bridge_ | _The Golden Rules Of Bridge_
 
-## Terence Reese: _Play These Hands With Me_
+##### Terence Reese: _Play These Hands With Me_
 
-## Robert F. MacKinnon: _Bridge, Probablity & Information_
+##### Robert F. MacKinnon: _Bridge, Probablity & Information_

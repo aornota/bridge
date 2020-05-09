@@ -1,6 +1,6 @@
 _...and coming later..._
 
-## <a name="Fourth_suit_forcing">] Fourth suit forcing
+## <a name="Fourth_suit_forcing"> Fourth suit forcing
 ## <a name="New_minor_forcing"> New minor forcing
 ## <a name="Splinters"> Splinters
 ## <a name="Jacoby_2NT"> Jacoby {2NT}

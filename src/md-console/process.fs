@@ -180,6 +180,7 @@ let private processTocTag (logger:ILogger) (contents:string) (match':Match) =
     let (|H1|_|) (line:string) = if (line.Trim ()).StartsWith "# " then linkAndText line else None
     let (|H2|_|) (line:string) = if (line.Trim ()).StartsWith "## " then linkAndText line else None
     let (|H3|_|) (line:string) = if (line.Trim ()).StartsWith "### " then linkAndText line else None
+    let (|H4|_|) (line:string) = if (line.Trim ()).StartsWith "#### " then linkAndText line else None
     logger.Information "Generating table-of-contents..."
     let toc =
         contents.Split '\n'
@@ -187,8 +188,9 @@ let private processTocTag (logger:ILogger) (contents:string) (match':Match) =
         |> List.choose (fun line ->
             match line with
             | H1 (link, text) -> Some (sprintf "* [**%s**](#%s)" text link)
-            | H2 (link, text) -> Some (sprintf "  * [%s](#%s)" text link)
-            | H3 (link, text) -> Some (sprintf "    * [_%s_](#%s)" text link)
+            | H2 (link, text) -> Some (sprintf "  * [_**%s**_](#%s)" text link)
+            | H3 (link, text) -> Some (sprintf "    * [%s](#%s)" text link)
+            | H4 (link, text) -> Some (sprintf "      * [_%s_](#%s)" text link)
             | _ -> None)
         |> String.concat "\n"
     logger.Information "...table-of-contents generated"
