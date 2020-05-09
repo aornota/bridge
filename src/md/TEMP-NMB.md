@@ -4,7 +4,7 @@ Cards: {As} | {7h} | {3d} | {Jc}
 
 Auction: {1H} | {3NT} | {-} | {pass} | {dbl} | {rdbl} | ...
 
-Full hand (with extras):
+Full hand (with additional info):
 
 > {| s:AK63 h:T42 d:- c:AQJT62 --shape --hcp |}
 

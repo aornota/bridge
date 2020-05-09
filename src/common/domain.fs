@@ -24,10 +24,8 @@ let private suitCounts (hand:Hand) =
 
 let private voidCount (spadeCount, heartCount, diamondCount, clubCount) =
     (if spadeCount = 0 then 1 else 0) + (if heartCount = 0 then 1 else 0) + (if diamondCount = 0 then 1 else 0) + (if clubCount = 0 then 1 else 0)
-
 let private singletonCount (spadeCount, heartCount, diamondCount, clubCount) =
     (if spadeCount = 1 then 1 else 0) + (if heartCount = 1 then 1 else 0) + (if diamondCount = 1 then 1 else 0) + (if clubCount = 1 then 1 else 0)
-
 let private doubletonCount (spadeCount, heartCount, diamondCount, clubCount) =
     (if spadeCount = 2 then 1 else 0) + (if heartCount = 2 then 1 else 0) + (if diamondCount = 2 then 1 else 0) + (if clubCount = 2 then 1 else 0)
 
@@ -36,13 +34,11 @@ let (|Balanced|_|) (hand:Hand) =
         let suitCounts = suitCounts hand
         if voidCount suitCounts = 0 && singletonCount suitCounts = 0 && doubletonCount suitCounts <= 1 then Some suitCounts else None
     else None
-
 let (|SemiBalanced|_|) (hand:Hand) =
     if hand.Length = 13 then
         let suitCounts = suitCounts hand
         if voidCount suitCounts = 0 && singletonCount suitCounts = 0 && doubletonCount suitCounts = 2 then Some suitCounts else None
     else None
-
 let (|Unbalanced|_|) (hand:Hand) =
     if hand.Length = 13 then
         let suitCounts = suitCounts hand

@@ -57,9 +57,7 @@ let private processHandTag (fileInfo:FileInfo) (match':Match) =
                         Ok (suit, ranks)
             | _ -> Error (sprintf "No cards for split for %A" suit)
         | _ :: _ -> Error (sprintf "Multiple splits for %A" suit)
-    let suitWithRanksMd (suit:Suit, ranks:Rank list) =
-        let ranks = if ranks.Length > 0 then ranks |> List.map (fun rank -> rank.MdString) |> String.concat "" else "-"
-        sprintf "%s%s" suit.MdString ranks
+    let suitWithRanksMd (suit:Suit, ranks:Rank list) = sprintf "%s%s" suit.MdString (if ranks.Length > 0 then ranks |> List.map (fun rank -> rank.MdString) |> String.concat "" else "-")
     let cardsMd spadeRanks heartRanks diamondRanks clubRanks =
         sprintf "%s %s %s %s" (suitWithRanksMd spadeRanks) (suitWithRanksMd heartRanks) (suitWithRanksMd diamondRanks) (suitWithRanksMd clubRanks)
     let tag = match'.Groups.[1].Value
@@ -78,8 +76,6 @@ let private processHandTag (fileInfo:FileInfo) (match':Match) =
             | 13, true -> Error "--partial flag should only be used when hand contains fewer than 13 cards"
             | 13, false ->
                 let cardsMd = cardsMd spadeRanks heartRanks diamondRanks clubRanks
-                let shapeMd = ""
-                let hcpMd = ""
                 let shapeMd, hcpMd =
                     if showShape || showHcp then
                         let spades = snd spadeRanks |> List.map (fun rank -> Card (rank, Spade))
@@ -89,20 +85,39 @@ let private processHandTag (fileInfo:FileInfo) (match':Match) =
                         let hand = spades @ hearts @ diamonds @ clubs
                         let shapeMd =
                             if showShape then
-                                " | TODO-NMB: Shape..."
+                                let suitCountsMd (spadeCount, heartCount, diamondCount, clubCount) =
+                                    let suitCounts = [ spadeCount ; heartCount ; diamondCount ; clubCount ]
+                                    let min, max = suitCounts |> List.min, suitCounts |> List.max
+                                    let suitCountMd count =
+                                        if count = min then sprintf "_%i_" count
+                                        else if count = max then sprintf "**%i**" count
+                                        else if count >= 4 then sprintf "_**%i**_" count
+                                        else sprintf "%i" count
+                                    sprintf "%s-%s-%s-%s" (suitCountMd spadeCount) (suitCountMd heartCount) (suitCountMd diamondCount) (suitCountMd clubCount)
+                                match hand with
+                                | Balanced suitCounts -> sprintf "Balanced (%s)" (suitCountsMd suitCounts)
+                                | SemiBalanced suitCounts -> sprintf "Semi-balanced (%s)" (suitCountsMd suitCounts)
+                                | Unbalanced suitCounts -> sprintf "Unbalanced (%s)" (suitCountsMd suitCounts)
+                                | _ -> failwithf "%s -> Hand tag %s is invalid: Unable to categorize as Balanced | Semi-Balanced | Unbalanced" fileInfo.FullName match'.Value
                             else ""
                         let hcpMd =
                             if showHcp then
                                 match hcp hand with
-                                | Ok hcp -> sprintf " | %i HCP" hcp // TODO-NMB: Space between number and "HCP" - or not?...
+                                | Ok hcp -> sprintf "%i HCP" hcp
                                 | Error error -> failwithf "%s -> Hand tag %s is invalid: %s" fileInfo.FullName match'.Value error
                             else ""
                         shapeMd, hcpMd
                     else "", ""
-                Ok (sprintf "%s%s%s" cardsMd shapeMd hcpMd)
+                let additionalInfoMd =
+                    match shapeMd, hcpMd with
+                    | "", "" -> ""
+                    | shapeMd, "" -> sprintf " -- %s" shapeMd
+                    | "", hcpMd -> sprintf " -- %s" hcpMd
+                    | shapeMd, hcpMd -> sprintf " -- %s | %s" shapeMd hcpMd
+                Ok (sprintf "%s%s" cardsMd additionalInfoMd)
             | _, true ->
-                if showHcp then Error "--hcp flag should not be used when hand contains fewer than 13 cards"
-                else if showShape then Error "--shape flag should not be used when hand contains fewer than 13 cards"
+                if showShape then Error "--shape flag should not be used when hand contains fewer than 13 cards"
+                else if showHcp then Error "--hcp flag should not be used when hand contains fewer than 13 cards"
                 else Ok (cardsMd spadeRanks heartRanks diamondRanks clubRanks)
             | _, false -> Error "--partial flag must be used when hand contains fewer than 13 cards" }
     match result with

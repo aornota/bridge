@@ -6,9 +6,9 @@ Cards: ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/reso
 
 Auction: 1![H](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/H.png) | 3![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png) | - | - | **dbl** | _**rdbl**_ | ...
 
-Full hand (with extras):
+Full hand (with additional info):
 
-> ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)AK63 ![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)T42 ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)- ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)AQJT62 | TODO-NMB: Shape... | 14 HCP
+> ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)AK63 ![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)T42 ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)- ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)AQJT62 -- Unbalanced (_**4**_-3-_0_-**6**) | 14 HCP
 
 Partial hand:
 
