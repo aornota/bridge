@@ -2,9 +2,9 @@
 
 {file:TEMP-NMB.md} // TEMP-NMB...
 
-// TODO-NMB: Auto-generate table-of-contents...{toc}
+## Table of contents
 
-{file:0999 Table of contents\Table of contents.md}
+{toc}
 
 {file:1000 Introduction\Introduction.md}
 

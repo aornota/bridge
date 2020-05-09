@@ -1,6 +1,6 @@
 # ![bridge](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/tpoc-32x32.png) | bridge (pre-α)
 
-## TEMP-NMB...
+# TEMP-NMB...
 
 Cards: ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)A | ![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)7 | ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)3 | ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)J
 
@@ -11,15 +11,12 @@ Full hand: {**_WARNING_ -> Unprocessed tag:**| s:AK63 h:T42 d:- c:AQJT62 --shape
 
 Partial hand: {**_WARNING_ -> Unprocessed tag:**| s:3 h:T d:- c:JT6 -p |}
 
-
 ## Table of contents
-
-_TODO-NMB: Create programmatically..._
 
 * [**Introduction**](#Introduction)
   * [Why weak no-trump?](#Why_weak_no-trump?)
-  * [Why 5-card majors?](#Why_5-card_majors?)
-  * [Why 2-over-1 game forcing?](#Why_2-over-1_game_forcing?)
+  * [Why 5-card majors](#Why_5-card_majors)
+  * [Why 2-over-1 game forcing](#Why_2-over-1_game_forcing)
 * [**Uncontested auctions**](#Uncontested_auctions)
   * [Standard opening bids](#Standard_opening_bids)
     * [_1NT opening bid_](#1NT_opening_bid)
@@ -27,7 +24,7 @@ _TODO-NMB: Create programmatically..._
     * [_1D and 1C opening bids_](#1D_and_1C_opening_bids)
   * [Strong opening bids](#Strong_opening_bids)
     * [_2NT opening bid_](#2NT_opening_bid)
-    * [_2C opening bid_](#2C_opening_bid)
+    * [_2C-opening-bid_](#2C-opening-bid)
   * [Weak (pre-emptive) opening bids](#Weak_(pre-emptive)_opening_bids)
     * [_2S and 2H opening bids_](#2S_and_2H_opening_bids)
     * [_Higher-level pre-empts_](#Higher-level_pre-empts)

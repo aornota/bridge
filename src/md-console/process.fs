@@ -5,7 +5,6 @@ open Aornota.Bridge.Common.SourcedLogger
 open Aornota.Bridge.MdConsole.Domain
 
 open Serilog
-open System
 open System.IO
 open System.Text.RegularExpressions
 
@@ -62,7 +61,7 @@ let rec private processFile (logger:ILogger) (fileInfo:FileInfo) =
             let inMultiLineComment = (line.Trim ()).StartsWith MULTI_LINE_COMMENT__STARTS
             (if not inMultiLineComment then line :: lines else lines), inMultiLineComment
     let lines, _ = lines |> List.fold folder ([], false)
-    let contents = lines |> List.rev |> String.concat Environment.NewLine
+    let contents = lines |> List.rev |> String.concat "\n"
     let contents = fileTag.Replace (contents, MatchEvaluator (processFileTag (processFile logger) fileInfo))
     let contents = cardTag.Replace (contents, MatchEvaluator (processCardTag fileInfo))
     let contents = bidTag.Replace (contents, MatchEvaluator (processBidTag fileInfo))
@@ -75,25 +74,46 @@ let rec private processFile (logger:ILogger) (fileInfo:FileInfo) =
 
 let private tocTag = Regex (sprintf "{%s}" TOC)
 
+let private processTocTag (logger:ILogger) (contents:string) (match':Match) =
+    let namedAnchor = Regex "<a name=\"(.+)\">"
+    let name (line:string) =
+        let match' = namedAnchor.Match line
+        if match'.Success then
+            let anchor = match'.Groups.[1].Value
+            Some (anchor, anchor.Replace ("_", " "))
+        else None
+    let (|H2|_|) (line:string) = if (line.Trim ()).StartsWith "## " then name line else None
+    let (|H3|_|) (line:string) = if (line.Trim ()).StartsWith "### " then name line else None
+    let (|H4|_|) (line:string) = if (line.Trim ()).StartsWith "#### " then name line else None
+    logger.Information "Generating table-of-contents..."
+    let toc =
+        contents.Split '\n'
+        |> List.ofArray
+        |> List.choose (fun line ->
+            match line with
+            | H2 (link, text) -> Some (sprintf "* [**%s**](#%s)" text link)
+            | H3 (link, text) -> Some (sprintf "  * [%s](#%s)" text link)
+            | H4 (link, text) -> Some (sprintf "    * [_%s_](#%s)" text link)
+            | _ -> None)
+        |> String.concat "\n"
+
+    logger.Debug ("toc:\n{toc}", toc)
+
+    logger.Information "...table-of-contents generated"
+    toc
+
 let processMd logger srcDir =
     let logger = logger |> sourcedLogger SOURCE
     let rootFileInfo = FileInfo (Path.Combine (srcDir, @"md\root.md"))
     logger.Information "Starting processing..."
     let contents = processFile logger rootFileInfo
-
     let contents =
         match tocTag.Matches contents |> List.ofSeq with
         | [] -> contents
-        | [ match' ] ->
-            // TODO-NMB: Generate table-of-contents...
-            (* logger.Information "Generating table-of-contents..."
-            let contents = ...
-            logger.Information "...table-of-contents generated" *)
-            contents
+        | [ _ ] -> tocTag.Replace (contents, MatchEvaluator (processTocTag logger contents))
         | match' :: _ ->
             logger.Warning ("Multiple {tag} tags found", match'.Value)
             contents
-
     logger.Information "...finished processing"
     let readmeFile = Path.Combine (rootFileInfo.Directory.Parent.Parent.FullName, "README.md")
     logger.Information ("Writing {readme}...", readmeFile)
