@@ -1,6 +1,7 @@
 # ![bridge](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/tpoc-32x32.png) | bridge (pre-α)
 
-{file:tag examples.md} // TEMP-NMB...
+(* TEMP-NMB... *)
+{file:- tag examples -.md}
 
 ## Table of contents
 

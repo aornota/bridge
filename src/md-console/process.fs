@@ -148,6 +148,7 @@ let rec private processFile (logger:ILogger) (fileInfo:FileInfo) =
         |> List.map (fun line -> match line.IndexOf (sprintf " %s" SINGLE_LINE_COMMENT) with | index when index > 0 -> line.Substring (0, index) | _ -> line)
     let folder (lines:string list, inMultiLineComment:bool) (line:string) =
         if inMultiLineComment then lines, not ((line.Trim ()).EndsWith MULTI_LINE_COMMENT__ENDS)
+        else if (line.Trim ()).StartsWith MULTI_LINE_COMMENT__STARTS && (line.Trim ()).EndsWith MULTI_LINE_COMMENT__ENDS then lines, false
         else
             let inMultiLineComment = (line.Trim ()).StartsWith MULTI_LINE_COMMENT__STARTS
             (if not inMultiLineComment then line :: lines else lines), inMultiLineComment
@@ -158,7 +159,9 @@ let rec private processFile (logger:ILogger) (fileInfo:FileInfo) =
     let contents = bidTag.Replace (contents, MatchEvaluator (processBidTag fileInfo))
     let contents = handTag.Replace (contents, MatchEvaluator (processHandTag fileInfo))
 
-    // TODO-NMB: More tags, e.g. auctions? deals?...
+    (* TODO-NMB:
+         - Auction tags?...
+         - Deal tags?... *)
 
     let contents = anyTag.Replace (contents, MatchEvaluator (processUnprocessedTag logger fileInfo))
     logger.Debug ("...processed {partialPath}", partialPath)
