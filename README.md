@@ -33,7 +33,7 @@ _Coming soon..._
 
 ### <a name="1NT_opening_bid"> 1![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png) opening bid
 
-_Coming soon..._
+_Work-in-progress..._
 
 
 A typical 1![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png) opening hand with scattered honours (and 2½ quick tricks) - and no need to worry about the useless doubleton because if partner is strong enough to respond, there is a good chance that they will have something useful in the spade suit:
@@ -46,6 +46,7 @@ A balanced hand with 12 HCP - but 4333 and "quacky" with poor intermediates and 
 
 A 1![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png) opening hand with a 5-card major:
 
+> ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)AT ![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)KJ965 ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)AT2 ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)Q98 -- Balanced (_2_-**5**-3-3) | 14 HCP
 
 A clearly "one-suited" balanced hand with a 5-card major that could be opened 1![S](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/S.png) (by partnership agreement):
 

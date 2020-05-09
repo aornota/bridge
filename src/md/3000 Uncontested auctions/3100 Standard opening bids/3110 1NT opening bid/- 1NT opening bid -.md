@@ -1,6 +1,6 @@
 ### <a name="1NT_opening_bid"> {1NT} opening bid
 
-_Coming soon..._
+_Work-in-progress..._
 
 (* TODO-NMB:
 
@@ -32,7 +32,7 @@ A balanced hand with 12 HCP - but 4333 and "quacky" with poor intermediates and 
 
 A {1NT} opening hand with a 5-card major:
 
-// > {| s: h: d: c: --shape --hcp |}
+> {| s:AT h:KJ965 d:AT2 c:Q98 --shape --hcp |}
 
 A clearly "one-suited" balanced hand with a 5-card major that could be opened {1S} (by partnership agreement):
 
