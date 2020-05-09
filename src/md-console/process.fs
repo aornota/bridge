@@ -198,7 +198,7 @@ let private processTocTag (logger:ILogger) (contents:string) (match':Match) =
 
 let processMd logger srcDir =
     let logger = logger |> sourcedLogger SOURCE
-    let rootFileInfo = FileInfo (Path.Combine (srcDir, @"md\root.md"))
+    let rootFileInfo = FileInfo (Path.Combine (srcDir, @"md\- root -.md"))
     logger.Information "Starting processing..."
     let contents = processFile logger rootFileInfo
     let contents =
