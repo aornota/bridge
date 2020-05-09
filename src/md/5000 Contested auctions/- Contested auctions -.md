@@ -1,6 +1,6 @@
 # <a name="Contested_auctions"> Contested auctions
 
-// TODO-NMB...
+_Coming soon...._
 
 
 
