@@ -2,6 +2,42 @@
 
 _Coming soon..._
 
+(* TODO-NMB:
+
+     - all balanced hands wih 12-14 HCP should be opened {1NT} - except (by partnership agreement) the worst hands with 12 HCP should be passed in some circumstances, e.g.:
+
+        -- whenever vulnerable?...
+        -- at unfavourable vulnerability?...
+        -- never in third seat (since pre-emptive)?...
+        -- always in fourth seat?...
+
+     - in fourth seat (i.e. after three passes), balanced hands with 15 HCP should also be opened {1NT}...
+
+     - balanced hands with a 5-card major should almost always be opened {1NT} (since rebid problems) - unless (by partnership agreement) clearly "one-suited"...
+
+     - (by partnership agreement) some 5422 (semi-balanced) hands can also be opened {1NT}, e.g.:
+
+        -- if bidding the 5-card suit then the 4-card suit would be a "reverse" (since not strong enough)?...
+        -- if scattered values (and not two useless doubletons)?...
+
+     - (by partnership agreement) some 6322 (semi-balanced) hands with a 6-card minor can also be opened {1NT}... *)
+
+A typical {1NT} opening hand with scattered honours (and 2 quick tricks) - and no need to worry about the useless doubleton because if partner is strong enough to respond, there is a good chance that they will have values in the spade suit:
+
+> {| s:84 h:AQJ6 d:J932 c:KQ7 --shape --hcp |}
+
+...
+
+// > {| s: h: d: c: --shape --hcp |}
+
+...
+
+// > {| s: h: d: c: --shape --hcp |}
+
+...
+
+// > {| s: h: d: c: --shape --hcp |}
+
 
 
 // TODO-NMB...{file:3111 Quantitative responses to 1NT.md}

@@ -36,6 +36,20 @@ _Coming soon..._
 _Coming soon..._
 
 
+A typical 1![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png) opening hand with scattered honours (and 2 quick tricks) - and no need to worry about the useless doubleton because if partner is strong enough to respond, there is a good chance that they will have values in the spade suit:
+
+> ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)84 ![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)AQJ6 ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)J932 ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)KQ7 -- Balanced (_2_-**4**-**4**-3) | 13 HCP
+
+...
+
+
+...
+
+
+...
+
+
+
 
 
 
