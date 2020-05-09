@@ -3,7 +3,7 @@
 (* TEMP-NMB... *)
 {file:- tag examples -.md}
 
-## Table of contents
+# Table of contents
 
 {toc}
 

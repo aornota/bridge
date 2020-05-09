@@ -1,6 +1,6 @@
 # ![bridge](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/tpoc-32x32.png) | bridge (pre-α)
 
-##### Tag examples
+# Tag examples
 
 Cards: ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)A | ![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)7 | ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)3 | ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)J
 
@@ -20,12 +20,13 @@ Full hands (some with additional info):
 
 > ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)Q92 ![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)AJ7 ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)KQT4 ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)843 -- Balanced (_3_-_3_-**4**-_3_) | 12 HCP
 
+
 Partial hand:
 
 > ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)5 ![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)- ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)Q ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)A98
 
 
-## Table of contents
+# Table of contents
 
 * [**Introduction**](#Introduction)
   * [Why weak no-trump?](#Why_weak_no-trump?)
@@ -42,98 +43,114 @@ Partial hand:
   * [Weak (pre-emptive) opening bids](#Weak_(pre-emptive)_opening_bids)
     * [_2S and 2H opening bids_](#2S_and_2H_opening_bids)
     * [_Higher-level pre-empts_](#Higher-level_pre-empts)
+  * [Fourth suit forcing](#Fourth_suit_forcing)
+  * [New minor forcing](#New_minor_forcing)
+  * [Splinters](#Splinters)
+  * [Jacoby 2NT](#Jacoby_2NT)
+  * [Bergen raises](#Bergen_raises)
+  * [Inverted minors](#Inverted_minors)
+  * [Gerber](#Gerber)
+  * [Roman key card Blackwood](#Roman_key_card_Blackwood)
 * [**Competitive auctions**](#Competitive_auctions)
   * [Overcalls](#Overcalls)
   * [Take-out doubles](#Take-out_doubles)
   * [Penalty doubles](#Penalty_doubles)
+  * [Negative doubles](#Negative_doubles)
+  * [Responsive doubles](#Responsive_doubles)
+  * [Unassuming cue-bid](#Unassuming_cue-bid)
+  * [Michaels cue-bid](#Michaels_cue-bid)
+  * [Unusual no-trump](#Unusual_no-trump)
+  * [Competing over 1NT](#Competing_over_1NT)
 * [**Recommended reading**](#Recommended_reading)
 
-## <a name="Introduction"> Introduction
+# <a name="Introduction"> Introduction
 
 _Coming soon..._
 
-### <a name="Why_weak_no-trump?"> Why weak no-trump?
+## <a name="Why_weak_no-trump?"> Why weak no-trump?
 
-### <a name="Why_5-card_majors"> Why 5-card majors?
+## <a name="Why_5-card_majors"> Why 5-card majors?
 
-### <a name="Why_2-over-1_game_forcing"> Why 2-over-1 game forcing?
+## <a name="Why_2-over-1_game_forcing"> Why 2-over-1 game forcing?
 
-## <a name="Uncontested_auctions"> Uncontested auctions
+# <a name="Uncontested_auctions"> Uncontested auctions
 
 _Coming soon..._
 
-### <a name="Standard_opening_bids"> Standard opening bids
+## <a name="Standard_opening_bids"> Standard opening bids
 
-#### <a name="1NT_opening_bid"> 1![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png) opening bid
+### <a name="1NT_opening_bid"> 1![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png) opening bid
 
-#### <a name="1S_and_1H_opening_bids"> 1![S](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/S.png) and 1![H](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/H.png) opening bids
+#### <a name="Stayman_(2C)_response"> Stayman (2![C](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/C.png)) response
 
-#### <a name="1D_and_1C_opening_bids"> 1![D](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/D.png) and 1![C](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/C.png) opening bids
+### <a name="1S_and_1H_opening_bids"> 1![S](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/S.png) and 1![H](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/H.png) opening bids
 
-### <a name="Strong_opening_bids"> Strong opening bids
+### <a name="1D_and_1C_opening_bids"> 1![D](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/D.png) and 1![C](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/C.png) opening bids
 
-#### <a name="2NT_opening_bid"> 2![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png) opening bid
+## <a name="Strong_opening_bids"> Strong opening bids
 
-#### <a name="2C-opening-bid"> 2![C](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/C.png) opening bid
+### <a name="2NT_opening_bid"> 2![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png) opening bid
 
-### <a name="Weak_(pre-emptive)_opening_bids"> Weak (pre-emptive) opening bids
+### <a name="2C-opening-bid"> 2![C](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/C.png) opening bid
 
-#### <a name="2S_and_2H_opening_bids"> 2![S](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/S.png) and 2![H](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/H.png) opening bids
+## <a name="Weak_(pre-emptive)_opening_bids"> Weak (pre-emptive) opening bids
 
-#### <a name="Higher-level_pre-empts"> Higher-level pre-empts
+### <a name="2S_and_2H_opening_bids"> 2![S](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/S.png) and 2![H](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/H.png) opening bids
+
+### <a name="Higher-level_pre-empts"> Higher-level pre-empts
 
 _...and coming later..._
 
-- [ ] Fourth suit forcing
-- [ ] New minor forcing
-- [ ] Jacoby 2![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png)
-- [ ] Splinters
-- [ ] Bergen raises
-- [ ] Inverted minors
-- [ ] Gerber
-- [ ] Roman key card Blackwood
+## <a name="Fourth_suit_forcing">] Fourth suit forcing
+## <a name="New_minor_forcing"> New minor forcing
+## <a name="Splinters"> Splinters
+## <a name="Jacoby_2NT"> Jacoby 2![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png)
+## <a name="Bergen_raises"> Bergen raises
+## <a name="Inverted_minors"> Inverted minors
+## <a name="Gerber"> Gerber
+## <a name="Roman_key_card_Blackwood"> Roman key card Blackwood
 
-## <a name="Competitive_auctions"> Competitive auctions
+# <a name="Competitive_auctions"> Competitive auctions
 
 _Coming soon..._
 
-### <a name="Overcalls"> Overcalls
+## <a name="Overcalls"> Overcalls
 
-### <a name="Take-out_doubles"> Take-out doubles
+## <a name="Take-out_doubles"> Take-out doubles
 
-### <a name="Penalty_doubles"> Penalty doubles
+## <a name="Penalty_doubles"> Penalty doubles
 
 _...and coming later..._
 
-- [ ] Negative doubles
-- [ ] Responsive doubles
-- [ ] Unassuming cue-bid
-- [ ] Michaels cue-bid
-- [ ] Unusual no-trump
-- [ ] Competing over 1![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png)
+## <a name="Negative_doubles"> Negative doubles
+## <a name="Responsive_doubles"> Responsive doubles
+## <a name="Unassuming_cue-bid"> Unassuming cue-bid
+## <a name="Michaels_cue-bid"> Michaels cue-bid
+## <a name="Unusual_no-trump"> Unusual no-trump
+## <a name="Competing_over_1NT"> Competing over 1![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png)
 
-## <a name="Recommended_reading"> Recommended reading
+# <a name="Recommended_reading"> Recommended reading
 
 _Coming soon..._
 
-#### Mary Ann Dufresne and Marion Ellingsen: _Bridge With Bells & Whistles_ | _We Love The Majors_
+## Mary Ann Dufresne and Marion Ellingsen: _Bridge With Bells & Whistles_ | _We Love The Majors_
 
-#### Bill Treble: _Getting Into The Bidding_ | _Two Over One_ | _Defending At Bridge_
+## Bill Treble: _Getting Into The Bidding_ | _Two Over One_ | _Defending At Bridge_
 
-#### Jim Jackson: _One Trick At A Time_
+## Jim Jackson: _One Trick At A Time_
 
-#### Larry Cohen: _To Bid Or Not To Bid_
+## Larry Cohen: _To Bid Or Not To Bid_
 
-#### Roy Hughes: _The Contested Auction_ | _Building A Bidding System_
+## Roy Hughes: _The Contested Auction_ | _Building A Bidding System_
 
-#### Max Hardy: _Standard Bridge Bidding For The 21st Century_ | _Advanced Bridge Bidding For The 21st Century_
+## Max Hardy: _Standard Bridge Bidding For The 21st Century_ | _Advanced Bridge Bidding For The 21st Century_
 
-#### Andy Stark: _The Weak Notrump_
+## Andy Stark: _The Weak Notrump_
 
-#### David Bird: _Ten Ways To Improve Your Bridge_ | _10 More Ways To Improve Your Bridge_
+## David Bird: _Ten Ways To Improve Your Bridge_ | _10 More Ways To Improve Your Bridge_
 
-#### Paul Mendelsen: _The Right Way To Play Bridge_ | _Control The Bidding_ | _Winning Ways To Play Your Cards_ | _121 Tips For Better Bridge_ | _Guide To Duplicate Bridge_ | _The Golden Rules Of Bridge_
+## Paul Mendelsen: _The Right Way To Play Bridge_ | _Control The Bidding_ | _Winning Ways To Play Your Cards_ | _121 Tips For Better Bridge_ | _Guide To Duplicate Bridge_ | _The Golden Rules Of Bridge_
 
-#### Terence Reese: _Play These Hands With Me_
+## Terence Reese: _Play These Hands With Me_
 
-#### Robert F. MacKinnon: _Bridge, Probablity & Information_
+## Robert F. MacKinnon: _Bridge, Probablity & Information_

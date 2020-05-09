@@ -1,4 +1,4 @@
-### <a name="Standard_opening_bids"> Standard opening bids
+## <a name="Standard_opening_bids"> Standard opening bids
 
 {file:3110 1NT opening bid\1NT opening bid.md}
 

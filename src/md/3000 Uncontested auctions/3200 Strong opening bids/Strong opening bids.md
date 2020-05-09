@@ -1,4 +1,4 @@
-### <a name="Strong_opening_bids"> Strong opening bids
+## <a name="Strong_opening_bids"> Strong opening bids
 
 {file:3210 2NT opening bid\2NT opening bid.md}
 

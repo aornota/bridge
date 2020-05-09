@@ -1,4 +1,4 @@
-##### Tag examples
+# Tag examples
 
 Cards: {As} | {7h} | {3d} | {Jc}
 
@@ -17,6 +17,8 @@ Full hands (some with additional info):
 > {| s:J63 h:54 d:KT c:QT7562 --shape --hcp |} // Semi-balanced (3-2-2-6) | 6 HCP
 
 > {| s:Q92 h:AJ7 d:KQT4 c:843 --shape --hcp |} // Balanced (3-4-3-3) | 12 HCP
+
+// > {| s: h: d: c: --shape --hcp |}
 
 Partial hand:
 

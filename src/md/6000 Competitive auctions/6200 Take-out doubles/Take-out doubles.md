@@ -1,1 +1,1 @@
-### <a name="Take-out_doubles"> Take-out doubles
+## <a name="Take-out_doubles"> Take-out doubles
