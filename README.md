@@ -61,7 +61,7 @@ _Coming soon..._
 
 #### <a name="Stayman_(2C)_response"> Stayman (2![C](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/C.png)) response
 
-#### <a name="Transfer_(2D_|_2H_|_2S_|_2NT)_responses"> Tranfer (2![D](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/D.png) | 2![H](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/H.png) | 2![S](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/S.png) | 2![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png)) responses
+#### <a name="Transfer_(2D_|_2H_|_2S_|_2NT)_responses"> Transfer (2![D](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/D.png) | 2![H](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/H.png) | 2![S](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/S.png) | 2![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png)) responses
 
 #### <a name="Texas_transfer_(4D_|_4H)_responses"> Texas transfer (4![D](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/D.png) | 4![H](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/H.png)) responses
 
