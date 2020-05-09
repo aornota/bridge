@@ -1,9 +1,9 @@
-# ![bridge](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/tpoc-32x32.png) | bridge (pre-α)
+# ![bridge](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/tpoc-32x32.png) | bridge (pre-_α_)
 
-(* TEMP-NMB... *)
-{file:- tag examples -.md}
+(* TEMP-NMB...
+{file:- tag examples -.md} *)
 
-# Table of contents
+## Table of contents
 
 {toc}
 
