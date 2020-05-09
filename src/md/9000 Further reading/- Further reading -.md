@@ -1,27 +1,49 @@
 # <a name="Further_reading"> Further reading
 
-_Coming soon..._
+// TODO-NMB: Categorize (beginner | intermediate | advanced) - and add "descriptions"...
 
 
 
-##### Mary Ann Dufresne and Marion Ellingsen: _Bridge With Bells & Whistles_ | _We Love The Majors_
+Mary Ann Dufresne and Marion Ellingsen: _Bridge With Bells & Whistles_
 
-##### Bill Treble: _Getting Into The Bidding_ | _Two Over One_ | _Defending At Bridge_
+Mary Ann Dufresne and Marion Ellingsen: _We Love The Majors_
 
-##### Jim Jackson: _One Trick At A Time_
+Bill Treble: _Getting Into The Bidding_
 
-##### Larry Cohen: _To Bid Or Not To Bid_
+Bill Treble: _Two Over One_
 
-##### Roy Hughes: _The Contested Auction_ | _Building A Bidding System_
+Bill Treble: _Defending At Bridge_
 
-##### Max Hardy: _Standard Bridge Bidding For The 21st Century_ | _Advanced Bridge Bidding For The 21st Century_
+Jim Jackson: _One Trick At A Time_
 
-##### Andy Stark: _The Weak Notrump_
+Larry Cohen: _To Bid Or Not To Bid_
 
-##### David Bird: _Ten Ways To Improve Your Bridge_ | _10 More Ways To Improve Your Bridge_
+Roy Hughes: _The Contested Auction_
 
-##### Paul Mendelsen: _The Right Way To Play Bridge_ | _Control The Bidding_ | _Winning Ways To Play Your Cards_ | _121 Tips For Better Bridge_ | _Guide To Duplicate Bridge_ | _The Golden Rules Of Bridge_
+Roy Hughes: _Building A Bidding System_
 
-##### Terence Reese: _Play These Hands With Me_
+Max Hardy: _Standard Bridge Bidding For The 21st Century_
 
-##### Robert F. MacKinnon: _Bridge, Probablity & Information_
+Max Hardy: _Advanced Bridge Bidding For The 21st Century_
+
+Andy Stark: _The Weak Notrump_
+
+David Bird: _Ten Ways To Improve Your Bridge_
+
+David Bird: _10 More Ways To Improve Your Bridge_
+
+Paul Mendelsen: _The Right Way To Play Bridge_
+
+Paul Mendelsen: _Control The Bidding_
+
+Paul Mendelsen: _Winning Ways To Play Your Cards_
+
+Paul Mendelsen: _121 Tips For Better Bridge_
+
+Paul Mendelsen: _Guide To Duplicate Bridge_
+
+Paul Mendelsen: _The Golden Rules Of Bridge_
+
+Terence Reese: _Play These Hands With Me_
+
+Robert F. MacKinnon: _Bridge, Probablity & Information_

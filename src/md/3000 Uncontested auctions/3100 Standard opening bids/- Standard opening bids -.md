@@ -6,6 +6,6 @@ _Coming soon..._
 
 {file:3110 1NT opening bid\- 1NT opening bid -.md}
 
-// TODO-NMB...{file:3120 1S and 1H opening bids\- 1S and 1H opening bids -.md}
+// TODO-NMB...{file:3120 1H and 1S opening bids\- 1H and 1S opening bids -.md}
 
-// TODO-NMB...{file:3130 1D and 1C opening bids\- 1D and 1C opening bids -.md}
+// TODO-NMB...{file:3130 1C and 1D opening bids\- 1C and 1D opening bids -.md}

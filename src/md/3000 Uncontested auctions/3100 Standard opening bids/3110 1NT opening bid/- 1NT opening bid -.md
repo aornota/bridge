@@ -4,8 +4,14 @@ _Coming soon..._
 
 
 
-// TODO-NMB...#### <a name="Stayman_(2C)_response"> Stayman ({2C}) response
+{file:3111 Quantitative responses to 1NT.md}
 
-// TODO-NMB...#### <a name="Transfer_(2D_|_2H_|_2S_|_2NT)_responses"> Transfer ({2D} | {2H} | {2S} | {2NT}) responses
+{file:3112 Stayman response to 1NT.md}
 
-// TODO-NMB...#### <a name="Texas_transfer_(4D_|_4H)_responses"> Texas transfer ({4D} | {4H}) responses
+{file:3113 Transfer responses to 1NT.md}
+
+{file:3114 Texas transfer responses to 1NT.md}
+
+{file:3115 3-major responses to 1NT.md}
+
+{file:3116 3-minor responses to 1NT.md}
