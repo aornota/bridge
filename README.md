@@ -38,11 +38,11 @@ _Work-in-progress..._
 
 A balanced hand with 13 HCP and scattered honours - and 2½ quick tricks - that shuould be opened 1![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png) (with no need to worry about the useless doubleton because if partner is strong enough to respond, there is a good chance that they will have something useful in the spade suit):
 
-> ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)84 ![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)AQJ6 ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)J932 ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)KQ7 -- balanced (_2_-**4**-**4**-3) | 13 HCP
+> ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)84 ![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)AQJ6 ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)J932 ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)KQ7 -- balanced (_2_-_**4**_-_**4**_-3) | 13 HCP
 
 A balanced hand with 12 HCP - but 4333 and "quacky" with poor intermediates and only 1 quick trick - that could be passed (by partnership agreement):
 
-> ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)QJ2 ![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)J82 ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)QJ63 ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)KQ5 -- balanced (3-3-**4**-3) | 12 HCP
+> ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)QJ2 ![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)J82 ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)QJ63 ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)KQ5 -- balanced (3-3-_**4**_-3) | 12 HCP
 
 A balanced hand with 14 HCP and a 5-card major that should be opened 1![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png):
 
