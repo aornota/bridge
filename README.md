@@ -50,6 +50,7 @@ A 1![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/N
 
 A clearly "one-suited" balanced hand with a 5-card major that could be opened 1![S](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/S.png) (by partnership agreement):
 
+> ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)AKQJ9 ![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)43 ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)J62 ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)J76 -- Balanced (**5**-_2_-3-3) | 12 HCP
 
 A semi-balanced (5422) hand that could be opened 1![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png) (by partnership agreement):
 

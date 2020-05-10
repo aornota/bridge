@@ -36,7 +36,7 @@ A {1NT} opening hand with a 5-card major:
 
 A clearly "one-suited" balanced hand with a 5-card major that could be opened {1S} (by partnership agreement):
 
-// > {| s: h: d: c: --shape --hcp |}
+> {| s:AKQJ9 h:43 d:J62 c:J76 --shape --hcp |}
 
 A semi-balanced (5422) hand that could be opened {1NT} (by partnership agreement):
 
