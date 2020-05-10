@@ -90,12 +90,11 @@ let private processHandTag (fileInfo:FileInfo) (match':Match) =
                         let shapeMd =
                             if showShape then
                                 let suitCountsMd (spadeCount, heartCount, diamondCount, clubCount) =
-                                    let suitCounts = [ spadeCount ; heartCount ; diamondCount ; clubCount ]
-                                    let min, max = suitCounts |> List.min, suitCounts |> List.max
+                                    let max = [ spadeCount ; heartCount ; diamondCount ; clubCount ] |> List.max
                                     let suitCountMd count =
-                                        if count = min then sprintf "_%i_" count
-                                        else if count = max then sprintf "**%i**" count
+                                        if count = max then sprintf "**%i**" count
                                         else if count >= 4 then sprintf "_**%i**_" count
+                                        else if count <= 2 then sprintf "_%i_" count
                                         else sprintf "%i" count
                                     sprintf "%s-%s-%s-%s" (suitCountMd spadeCount) (suitCountMd heartCount) (suitCountMd diamondCount) (suitCountMd clubCount)
                                 match hand with

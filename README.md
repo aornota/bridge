@@ -42,7 +42,7 @@ A typical 1![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/res
 
 A balanced hand with 12 HCP - but 4333 and "quacky" with poor intermediates and only 1 quick trick - that could be passed (by partnership agreement):
 
-> ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)QJ2 ![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)J82 ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)QJ63 ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)KQ5 -- Balanced (_3_-_3_-**4**-_3_) | 12 HCP
+> ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)QJ2 ![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)J82 ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)QJ63 ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)KQ5 -- Balanced (3-3-**4**-3) | 12 HCP
 
 A 1![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png) opening hand with a 5-card major:
 
