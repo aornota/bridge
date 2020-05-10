@@ -54,6 +54,7 @@ A clearly "one-suited" balanced hand with a 5-card major that could be opened 1!
 
 A semi-balanced (5422) hand that could be opened 1![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png) (by partnership agreement):
 
+> ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)T7 ![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)A4 ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)KJT6 ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)KQ983 -- Semi-balanced (_2_-_2_-_**4**_-**5**) | 13 HCP
 
 A semi-balanced (6322) hand with a 6-card minor that could be opened 1![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png) (by partnership agreement):
 

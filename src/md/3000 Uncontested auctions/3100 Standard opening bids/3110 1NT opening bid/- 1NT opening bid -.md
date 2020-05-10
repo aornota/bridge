@@ -40,7 +40,7 @@ A clearly "one-suited" balanced hand with a 5-card major that could be opened {1
 
 A semi-balanced (5422) hand that could be opened {1NT} (by partnership agreement):
 
-// > {| s: h: d: c: --shape --hcp |}
+> {| s:T7 h:A4 d:KJT6 c:KQ983 --shape --hcp |}
 
 A semi-balanced (6322) hand with a 6-card minor that could be opened {1NT} (by partnership agreement):
 
