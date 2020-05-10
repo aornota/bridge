@@ -98,10 +98,10 @@ let private processHandTag (fileInfo:FileInfo) (match':Match) =
                                         else sprintf "%i" count
                                     sprintf "%s-%s-%s-%s" (suitCountMd spadeCount) (suitCountMd heartCount) (suitCountMd diamondCount) (suitCountMd clubCount)
                                 match hand with
-                                | Balanced suitCounts -> sprintf "Balanced (%s)" (suitCountsMd suitCounts)
-                                | SemiBalanced suitCounts -> sprintf "Semi-balanced (%s)" (suitCountsMd suitCounts)
-                                | Unbalanced suitCounts -> sprintf "Unbalanced (%s)" (suitCountsMd suitCounts)
-                                | _ -> failwithf "%s -> Hand tag %s is invalid: Unable to categorize as Balanced | Semi-Balanced | Unbalanced" fileInfo.FullName match'.Value
+                                | Balanced suitCounts -> sprintf "balanced (%s)" (suitCountsMd suitCounts)
+                                | SemiBalanced suitCounts -> sprintf "semi-balanced (%s)" (suitCountsMd suitCounts)
+                                | Unbalanced suitCounts -> sprintf "unbalanced (%s)" (suitCountsMd suitCounts)
+                                | _ -> failwithf "%s -> Hand tag %s is invalid: Unable to categorize as balanced | semi-Balanced | unbalanced" fileInfo.FullName match'.Value
                             else ""
                         let hcpMd =
                             if showHcp then

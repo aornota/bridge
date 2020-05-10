@@ -38,23 +38,23 @@ _Work-in-progress..._
 
 A typical 1![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png) opening hand with scattered honours (and 2½ quick tricks) - and no need to worry about the useless doubleton because if partner is strong enough to respond, there is a good chance that they will have something useful in the spade suit:
 
-> ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)84 ![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)AQJ6 ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)J932 ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)KQ7 -- Balanced (_2_-**4**-**4**-3) | 13 HCP
+> ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)84 ![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)AQJ6 ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)J932 ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)KQ7 -- balanced (_2_-**4**-**4**-3) | 13 HCP
 
 A balanced hand with 12 HCP - but 4333 and "quacky" with poor intermediates and only 1 quick trick - that could be passed (by partnership agreement):
 
-> ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)QJ2 ![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)J82 ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)QJ63 ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)KQ5 -- Balanced (3-3-**4**-3) | 12 HCP
+> ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)QJ2 ![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)J82 ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)QJ63 ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)KQ5 -- balanced (3-3-**4**-3) | 12 HCP
 
 A 1![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png) opening hand with a 5-card major:
 
-> ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)AT ![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)KJ965 ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)AT2 ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)Q98 -- Balanced (_2_-**5**-3-3) | 14 HCP
+> ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)AT ![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)KJ965 ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)AT2 ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)Q98 -- balanced (_2_-**5**-3-3) | 14 HCP
 
 A clearly "one-suited" balanced hand with a 5-card major that could be opened 1![S](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/S.png) (by partnership agreement):
 
-> ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)AKQJ9 ![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)43 ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)J62 ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)J76 -- Balanced (**5**-_2_-3-3) | 12 HCP
+> ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)AKQJ9 ![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)43 ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)J62 ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)J76 -- balanced (**5**-_2_-3-3) | 12 HCP
 
 A semi-balanced (5422) hand that could be opened 1![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png) (by partnership agreement):
 
-> ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)T7 ![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)A4 ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)KJT6 ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)KQ983 -- Semi-balanced (_2_-_2_-_**4**_-**5**) | 13 HCP
+> ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)T7 ![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)A4 ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)KJT6 ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)KQ983 -- semi-balanced (_2_-_2_-_**4**_-**5**) | 13 HCP
 
 A semi-balanced (6322) hand with a 6-card minor that could be opened 1![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png) (by partnership agreement):
 
