@@ -29,5 +29,6 @@
 > {| s:5 h:- d:Q c:A98 --partial |}
 
 (* TODO-NMB:
+     - Multiple cards in a suit?...
      - Auction tags?...
      - Deal tags?... *)

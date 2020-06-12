@@ -22,7 +22,7 @@ _Work-in-progress..._
 
      - (by partnership agreement) some 6322 (semi-balanced) hands with a 6-card minor can also be opened {1NT}... *)
 
-A balanced hand with 13 HCP and scattered honours - and 2½ quick tricks - that shuould be opened {1NT} (with no need to worry about the useless doubleton because if partner is strong enough to respond, there is a good chance that they will have something useful in the spade suit):
+A balanced hand with 13 HCP and scattered honours - and 2½ quick tricks - that should be opened {1NT} (with no need to worry about the useless doubleton because if partner is strong enough to respond, there is a good chance that they will have something useful in the spade suit):
 
 > {| s:84 h:AQJ6 d:J932 c:KQ7 --shape --hcp |}
 
