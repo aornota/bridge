@@ -36,7 +36,7 @@ _Coming soon..._
 _Work-in-progress..._
 
 
-A balanced hand with 13 HCP and scattered honours - and 2½ quick tricks - that shuould be opened 1![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png) (with no need to worry about the useless doubleton because if partner is strong enough to respond, there is a good chance that they will have something useful in the spade suit):
+A balanced hand with 13 HCP and scattered honours - and 2½ quick tricks - that should be opened 1![NT](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/NT.png) (with no need to worry about the useless doubleton because if partner is strong enough to respond, there is a good chance that they will have something useful in the spade suit):
 
 > ![spade](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/spade.png)84 ![heart](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/heart.png)AQJ6 ![diamond](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/diamond.png)J932 ![club](https://raw.githubusercontent.com/aornota/bridge/master/src/resources/club.png)KQ7 -- balanced (_2_-_**4**_-_**4**_-3) | 13 HCP
 
