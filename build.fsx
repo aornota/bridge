@@ -30,7 +30,7 @@ Target.create "run-md-console" (fun _ ->
     runDotNet "run" mdConsoleDir)
 
 Target.create "help" (fun _ ->
-    printfn "\nThese useful build targets can be run via 'fake build -t {target}':"
+    printfn "\nThese useful build targets can be run via 'dotnet fake build -t {target}':"
     printfn "\n\trun-md-console -> builds and runs [Debug] md-console"
     printfn "\n\thelp -> shows this list of build targets\n")
 
