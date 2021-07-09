@@ -1,8 +1,7 @@
 {
     "editor.fontSize": 12
     , "files.exclude": {
-		".config/": true
-		, ".fake/": true
+		".fake/": true
 		, ".ionide/": true
         , ".paket/": true
 		, "paket-files/": true
