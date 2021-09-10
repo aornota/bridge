@@ -25,3 +25,4 @@ group md-console
 	nuget Serilog
 	nuget Serilog.Settings.Configuration
 	nuget Serilog.Sinks.Console
+    nuget Thoth.Json.Net

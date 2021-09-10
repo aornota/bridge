@@ -6,3 +6,4 @@ group md-console
 	Serilog
     Serilog.Settings.Configuration
 	Serilog.Sinks.Console
+    Thoth.Json.Net

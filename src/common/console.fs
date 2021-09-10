@@ -1,8 +1,8 @@
-module Aornota.Bridge.MdConsole.Console
+module Aornota.Bridge.Common.Console
 
 open System
 
-let private lockObj = obj ()
+let private lockObj = obj()
 
 let write (text:string) consoleColor =
     let action = (fun _ ->
@@ -12,6 +12,6 @@ let write (text:string) consoleColor =
         Console.ForegroundColor <- current)
     lock lockObj action
 
-let writeNewLine text consoleColor = write (sprintf "\n%s" text) consoleColor
+let writeNewLine text consoleColor = write $"\n{text}" consoleColor
 
 let writeBlankLine() = writeNewLine String.Empty ConsoleColor.White

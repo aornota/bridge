@@ -7,10 +7,22 @@
         <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     </PropertyGroup>
     <ItemGroup> <!-- Compile -->
-        <Compile Include="..\common\domain.fs" />
+        <Compile Include="..\common\console.fs" />
+        <Compile Include="..\common\if-debug.fs" />
+        <Compile Include="..\common\mathy.fs" />
         <Compile Include="..\common\sourced-logger.fs" />
-        <Compile Include="console.fs" />
-        <Compile Include="domain.fs" />
+        <Compile Include="..\domain\core.fs" />
+        <Compile Include="..\domain\auction.fs" />
+        <Compile Include="..\domain\deal.fs" />
+        <Compile Include="..\domain\evaluation\core.fs" />
+        <Compile Include="..\domain\json\deal.fs" />
+        <Compile Include="..\domain\random\deal.fs" />
+        <Compile Include="..\domain\formatting\core.fs" />
+        <Compile Include="..\domain\formatting\auction.fs" />
+        <Compile Include="..\domain\formatting\deal.fs" />
+        <Compile Include="..\domain\scoring\auction.fs" />
+        <Compile Include="extensions\core.fs" />
+        <Compile Include="extensions\auction.fs" />
         <Compile Include="process.fs" />
         <Compile Include="program.fs" />
     </ItemGroup>
