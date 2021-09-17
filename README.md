@@ -10,7 +10,7 @@
 
 # <a name="Introduction"> Introduction
 
-_Work-in-progress towards bridge notes: bidding | declarer play | defence | ..._
+_Work-in-progress towards Bridge notes: bidding | declarer play | defence | ..._
 
 
 
